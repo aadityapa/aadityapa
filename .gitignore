@@ -20,10 +20,18 @@ __pycache__/
 .venv/
 
 # .build/ policy: the generator and validation tooling are tracked on purpose
-# (they document how the hero SVGs are produced); every other file in .build/
-# is scratch output (test SVGs, preview PNGs, ad-hoc analysis) and never ships.
+# (they document how every shipped SVG is produced); every other file in
+# .build/ is scratch output (test SVGs, preview PNGs, ad-hoc analysis) and
+# never ships.
 .build/*
 !.build/generate_svgs.py
+!.build/generate_ecosystem.py
+!.build/generate_architecture.py
+!.build/generate_timeline.py
+!.build/generate_certifications.py
+!.build/generate_projects.py
+!.build/photo_to_ascii.py
+!.build/ascii_face.py
 !.build/optimize_svgs.py
 !.build/validate.py
 !.build/make_preview.py

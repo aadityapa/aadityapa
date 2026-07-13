@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 760" width="1180" height="760" role="img" aria-labelledby="t d">
+<title id="t">Aaditya Padiya — Technology Ecosystem</title>
+<desc id="d">Animated light-theme orbit map of Aaditya Padiya's technology ecosystem: a central glass node with his name, an inner orbit of core skills (Python, AWS, Docker, Linux, Git, DevOps) and an outer orbit of ecosystem technologies (React, Cloud, Networking, FastAPI, Node, Postgres, Redis, AI), connected by pulsing energy lines.</desc>
+<defs>
+<linearGradient id="ag" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#2563EB"/><stop offset="0.5" stop-color="#06B6D4"/><stop offset="1" stop-color="#10B981"/>
+</linearGradient>
+<linearGradient id="bs" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1180" y2="760">
+  <stop offset="0" stop-color="#2563EB"/><stop offset="0.25" stop-color="#06B6D4"/>
+  <stop offset="0.5" stop-color="#10B981"/><stop offset="0.75" stop-color="#06B6D4"/>
+  <stop offset="1" stop-color="#2563EB"/>
+  <animateTransform attributeName="gradientTransform" type="rotate" from="0 590 380" to="360 590 380" dur="14s" repeatCount="indefinite"/>
+</linearGradient>
+<radialGradient id="b1" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#2563EB" stop-opacity="0.8"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="b2" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#06B6D4" stop-opacity="0.7"/><stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="b3" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#10B981" stop-opacity="0.6"/><stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0F172A" stop-opacity="0.10"/>
+  <stop offset="0.18" stop-color="#0F172A" stop-opacity="0.03"/>
+  <stop offset="1" stop-color="#0F172A" stop-opacity="0"/>
+</linearGradient>
+<filter id="fb" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="46"/>
+</filter>
+<filter id="fg" x="-80%" y="-80%" width="260%" height="260%">
+  <feGaussianBlur stdDeviation="3.2" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fs" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="9"/>
+</filter>
+<clipPath id="cv"><rect x="0" y="0" width="1180" height="760" rx="24"/></clipPath>
+</defs>
+<rect x="0" y="0" width="1180" height="760" rx="24" fill="#FFFFFF"/><g clip-path="url(#cv)" opacity="0.22">
+<circle cx="170" cy="140" r="280" fill="url(#b1)" filter="url(#fb)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;120 80;30 -40;0 0" dur="28s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1010" cy="600" r="300" fill="url(#b2)" filter="url(#fb)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;-140 -90;-30 50;0 0" dur="33s" repeatCount="indefinite"/>
+</circle>
+<circle cx="900" cy="90" r="220" fill="url(#b3)" filter="url(#fb)" opacity="0.8">
+  <animateTransform attributeName="transform" type="translate" values="0 0;-80 110;90 30;0 0" dur="25s" repeatCount="indefinite"/>
+</circle>
+</g><g clip-path="url(#cv)"><circle cx="140" cy="560" r="1.8" fill="#2563EB" opacity="0.5" filter="url(#fg)">
+  <animateMotion path="M0 0 C 30 -60, 90 -40, 60 -120" dur="17s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.15;0.55;0.15" dur="5.7s" repeatCount="indefinite"/>
+</circle><circle cx="320" cy="110" r="1.4" fill="#2563EB" opacity="0.5" filter="url(#fg)">
+  <animateMotion path="M0 0 C -40 50, 40 100, -20 150" dur="21s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.15;0.55;0.15" dur="7.0s" repeatCount="indefinite"/>
+</circle><circle cx="1040" cy="300" r="2.0" fill="#2563EB" opacity="0.5" filter="url(#fg)">
+  <animateMotion path="M0 0 C 40 -70, -40 -100, 30 -160" dur="18s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.15;0.55;0.15" dur="6.0s" repeatCount="indefinite"/>
+</circle><circle cx="1100" cy="640" r="1.5" fill="#2563EB" opacity="0.5" filter="url(#fg)">
+  <animateMotion path="M0 0 C -30 60, 40 110, -20 170" dur="20s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.15;0.55;0.15" dur="6.7s" repeatCount="indefinite"/>
+</circle><circle cx="90" cy="320" r="1.6" fill="#2563EB" opacity="0.5" filter="url(#fg)">
+  <animateMotion path="M0 0 C 40 60, -40 120, 30 180" dur="19s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.15;0.55;0.15" dur="6.3s" repeatCount="indefinite"/>
+</circle></g><rect x="0" y="0" width="1180" height="760" rx="24" fill="url(#gl)" clip-path="url(#cv)"/><rect x="1.5" y="1.5" width="1177" height="757" rx="22.5" fill="none" stroke="url(#bs)" stroke-width="1.6" opacity="0.9"/><rect x="1.5" y="1.5" width="1177" height="757" rx="22.5" fill="none" stroke="url(#bs)" stroke-width="3" opacity="0.25" filter="url(#fs)"/>
+<text x="36" y="46" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12.5" fill="#64748B" xml:space="preserve">// tech.ecosystem --orbits 2 --nodes 14</text>
+<circle cx="1140" cy="42" r="4" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="1124" y="46" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#64748B" text-anchor="end" xml:space="preserve">core + ecosystem</text>
+<circle cx="590" cy="386" r="195" fill="none" stroke="#E2E8F0" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.6"/>
+<circle cx="590" cy="386" r="310" fill="none" stroke="#E2E8F0" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.6"/>
+<g><path d="M590 386 L590.0 191.0" stroke="#E2E8F0" stroke-width="1" opacity="0.3"/><circle r="3" fill="#06B6D4" filter="url(#fg)" opacity="0">
+  <animateMotion path="M590 386 L590.0 191.0" dur="3s" begin="0.00s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.75;1" dur="3s" begin="0.00s" repeatCount="indefinite"/>
+</circle><path d="M590 386 L758.9 288.5" stroke="#E2E8F0" stroke-width="1" opacity="0.3"/><circle r="3" fill="#06B6D4" filter="url(#fg)" opacity="0">
+  <animateMotion path="M590 386 L758.9 288.5" dur="3s" begin="0.55s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.75;1" dur="3s" begin="0.55s" repeatCount="indefinite"/>
+</circle><path d="M590 386 L758.9 483.5" stroke="#E2E8F0" stroke-width="1" opacity="0.3"/><circle r="3" fill="#06B6D4" filter="url(#fg)" opacity="0">
+  <animateMotion path="M590 386 L758.9 483.5" dur="3s" begin="1.10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.75;1" dur="3s" begin="1.10s" repeatCount="indefinite"/>
+</circle><path d="M590 386 L590.0 581.0" stroke="#E2E8F0" stroke-width="1" opacity="0.3"/><circle r="3" fill="#06B6D4" filter="url(#fg)" opacity="0">
+  <animateMotion path="M590 386 L590.0 581.0" dur="3s" begin="1.65s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.75;1" dur="3s" begin="1.65s" repeatCount="indefinite"/>
+</circle><path d="M590 386 L421.1 483.5" stroke="#E2E8F0" stroke-width="1" opacity="0.3"/><circle r="3" fill="#06B6D4" filter="url(#fg)" opacity="0">
+  <animateMotion path="M590 386 L421.1 483.5" dur="3s" begin="2.20s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.75;1" dur="3s" begin="2.20s" repeatCount="indefinite"/>
+</circle><path d="M590 386 L421.1 288.5" stroke="#E2E8F0" stroke-width="1" opacity="0.3"/><circle r="3" fill="#06B6D4" filter="url(#fg)" opacity="0">
+  <animateMotion path="M590 386 L421.1 288.5" dur="3s" begin="2.75s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.15;0.75;1" dur="3s" begin="2.75s" repeatCount="indefinite"/>
+</circle><path d="M590.0 191.0 L708.6 99.6" stroke="#06B6D4" stroke-width="1" opacity="0.22"/><circle r="2.6" fill="#10B981" filter="url(#fg)" opacity="0">
+  <animateMotion path="M590.0 191.0 L708.6 99.6" dur="4s" begin="0.80s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.15;0.75;1" dur="4s" begin="0.80s" repeatCount="indefinite"/>
+</circle><path d="M758.9 288.5 L876.4 267.4" stroke="#06B6D4" stroke-width="1" opacity="0.22"/><circle r="2.6" fill="#10B981" filter="url(#fg)" opacity="0">
+  <animateMotion path="M758.9 288.5 L876.4 267.4" dur="4s" begin="1.70s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.15;0.75;1" dur="4s" begin="1.70s" repeatCount="indefinite"/>
+</circle><path d="M590.0 581.0 L471.4 672.4" stroke="#06B6D4" stroke-width="1" opacity="0.22"/><circle r="2.6" fill="#10B981" filter="url(#fg)" opacity="0">
+  <animateMotion path="M590.0 581.0 L471.4 672.4" dur="4s" begin="2.60s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.15;0.75;1" dur="4s" begin="2.60s" repeatCount="indefinite"/>
+</circle><path d="M421.1 483.5 L303.6 504.6" stroke="#06B6D4" stroke-width="1" opacity="0.22"/><circle r="2.6" fill="#10B981" filter="url(#fg)" opacity="0">
+  <animateMotion path="M421.1 483.5 L303.6 504.6" dur="4s" begin="3.50s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.15;0.75;1" dur="4s" begin="3.50s" repeatCount="indefinite"/>
+</circle></g>
+<g>
+<animateTransform attributeName="transform" type="rotate" from="0 590 386" to="360 590 386" dur="60s" repeatCount="indefinite"/><g>
+<animateTransform attributeName="transform" type="rotate" from="0 590.0 191.0" to="-360 590.0 191.0" dur="60s" repeatCount="indefinite"/>
+<circle cx="590.0" cy="191.0" r="36.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="3.6s" begin="0.0s" repeatCount="indefinite"/>
+</circle>
+<circle cx="590.0" cy="191.0" r="34" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="590.0" cy="191.0" r="34" fill="url(#gl)"/>
+<circle cx="590.0" cy="191.0" r="34" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="590.0" y="195.0" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" fill="#0F172A" text-anchor="middle">Python</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 758.9 288.5" to="-360 758.9 288.5" dur="60s" repeatCount="indefinite"/>
+<circle cx="758.9" cy="288.5" r="36.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="4.1s" begin="0.4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="758.9" cy="288.5" r="34" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="758.9" cy="288.5" r="34" fill="url(#gl)"/>
+<circle cx="758.9" cy="288.5" r="34" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="758.9" y="292.5" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0F172A" text-anchor="middle">AWS</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 758.9 483.5" to="-360 758.9 483.5" dur="60s" repeatCount="indefinite"/>
+<circle cx="758.9" cy="483.5" r="36.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="4.6s" begin="0.8s" repeatCount="indefinite"/>
+</circle>
+<circle cx="758.9" cy="483.5" r="34" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="758.9" cy="483.5" r="34" fill="url(#gl)"/>
+<circle cx="758.9" cy="483.5" r="34" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="758.9" y="487.5" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" fill="#0F172A" text-anchor="middle">Docker</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 590.0 581.0" to="-360 590.0 581.0" dur="60s" repeatCount="indefinite"/>
+<circle cx="590.0" cy="581.0" r="36.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="5.1s" begin="1.2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="590.0" cy="581.0" r="34" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="590.0" cy="581.0" r="34" fill="url(#gl)"/>
+<circle cx="590.0" cy="581.0" r="34" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="590.0" y="585.0" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0F172A" text-anchor="middle">Linux</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 421.1 483.5" to="-360 421.1 483.5" dur="60s" repeatCount="indefinite"/>
+<circle cx="421.1" cy="483.5" r="36.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="3.6s" begin="1.6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="421.1" cy="483.5" r="34" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="421.1" cy="483.5" r="34" fill="url(#gl)"/>
+<circle cx="421.1" cy="483.5" r="34" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="421.1" y="487.5" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0F172A" text-anchor="middle">Git</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 421.1 288.5" to="-360 421.1 288.5" dur="60s" repeatCount="indefinite"/>
+<circle cx="421.1" cy="288.5" r="36.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="4.1s" begin="2.0s" repeatCount="indefinite"/>
+</circle>
+<circle cx="421.1" cy="288.5" r="34" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="421.1" cy="288.5" r="34" fill="url(#gl)"/>
+<circle cx="421.1" cy="288.5" r="34" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="421.1" y="292.5" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" fill="#0F172A" text-anchor="middle">DevOps</text>
+</g></g>
+<g>
+<animateTransform attributeName="transform" type="rotate" from="0 590 386" to="-360 590 386" dur="90s" repeatCount="indefinite"/><g>
+<animateTransform attributeName="transform" type="rotate" from="0 708.6 99.6" to="360 708.6 99.6" dur="90s" repeatCount="indefinite"/>
+<circle cx="708.6" cy="99.6" r="40.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="3.6s" begin="0.0s" repeatCount="indefinite"/>
+</circle>
+<circle cx="708.6" cy="99.6" r="38" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="708.6" cy="99.6" r="38" fill="url(#gl)"/>
+<circle cx="708.6" cy="99.6" r="38" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="708.6" y="103.6" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0F172A" text-anchor="middle">React</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 876.4 267.4" to="360 876.4 267.4" dur="90s" repeatCount="indefinite"/>
+<circle cx="876.4" cy="267.4" r="40.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="4.1s" begin="0.4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="876.4" cy="267.4" r="38" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="876.4" cy="267.4" r="38" fill="url(#gl)"/>
+<circle cx="876.4" cy="267.4" r="38" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="876.4" y="271.4" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0F172A" text-anchor="middle">Cloud</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 876.4 504.6" to="360 876.4 504.6" dur="90s" repeatCount="indefinite"/>
+<circle cx="876.4" cy="504.6" r="40.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="4.6s" begin="0.8s" repeatCount="indefinite"/>
+</circle>
+<circle cx="876.4" cy="504.6" r="38" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="876.4" cy="504.6" r="38" fill="url(#gl)"/>
+<circle cx="876.4" cy="504.6" r="38" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="876.4" y="508.6" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#0F172A" text-anchor="middle">Networking</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 708.6 672.4" to="360 708.6 672.4" dur="90s" repeatCount="indefinite"/>
+<circle cx="708.6" cy="672.4" r="40.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="5.1s" begin="1.2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="708.6" cy="672.4" r="38" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="708.6" cy="672.4" r="38" fill="url(#gl)"/>
+<circle cx="708.6" cy="672.4" r="38" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="708.6" y="676.4" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" fill="#0F172A" text-anchor="middle">FastAPI</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 471.4 672.4" to="360 471.4 672.4" dur="90s" repeatCount="indefinite"/>
+<circle cx="471.4" cy="672.4" r="40.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="3.6s" begin="1.6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="471.4" cy="672.4" r="38" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="471.4" cy="672.4" r="38" fill="url(#gl)"/>
+<circle cx="471.4" cy="672.4" r="38" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="471.4" y="676.4" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0F172A" text-anchor="middle">Node</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 303.6 504.6" to="360 303.6 504.6" dur="90s" repeatCount="indefinite"/>
+<circle cx="303.6" cy="504.6" r="40.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="4.1s" begin="2.0s" repeatCount="indefinite"/>
+</circle>
+<circle cx="303.6" cy="504.6" r="38" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="303.6" cy="504.6" r="38" fill="url(#gl)"/>
+<circle cx="303.6" cy="504.6" r="38" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="303.6" y="508.6" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" fill="#0F172A" text-anchor="middle">Postgres</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 303.6 267.4" to="360 303.6 267.4" dur="90s" repeatCount="indefinite"/>
+<circle cx="303.6" cy="267.4" r="40.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="4.6s" begin="2.4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="303.6" cy="267.4" r="38" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="303.6" cy="267.4" r="38" fill="url(#gl)"/>
+<circle cx="303.6" cy="267.4" r="38" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="303.6" y="271.4" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0F172A" text-anchor="middle">Redis</text>
+</g><g>
+<animateTransform attributeName="transform" type="rotate" from="0 471.4 99.6" to="360 471.4 99.6" dur="90s" repeatCount="indefinite"/>
+<circle cx="471.4" cy="99.6" r="40.5" fill="none" stroke="url(#ag)" stroke-width="2.5" opacity="0.3" filter="url(#fs)">
+  <animate attributeName="opacity" values="0.15;0.5;0.15" dur="5.1s" begin="2.8s" repeatCount="indefinite"/>
+</circle>
+<circle cx="471.4" cy="99.6" r="38" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="471.4" cy="99.6" r="38" fill="url(#gl)"/>
+<circle cx="471.4" cy="99.6" r="38" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.85"/>
+<text x="471.4" y="103.6" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0F172A" text-anchor="middle">AI</text>
+</g></g>
+<g>
+<circle cx="590" cy="386" r="92" fill="url(#b2)" opacity="0.3">
+  <animate attributeName="opacity" values="0.18;0.42;0.18" dur="5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="590" cy="386" r="76" fill="none" stroke="url(#ag)" stroke-width="2" opacity="0.7">
+  <animate attributeName="r" values="76;96" dur="3.2s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.65;0" dur="3.2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="590" cy="386" r="75" fill="#F8FAFC" fill-opacity="0.85" stroke="#E2E8F0" stroke-width="1"/>
+<circle cx="590" cy="386" r="75" fill="url(#gl)"/>
+<circle cx="590" cy="386" r="75" fill="none" stroke="url(#ag)" stroke-width="1.6" opacity="0.9"/>
+<text x="590" y="380" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="16" font-weight="700" fill="#0F172A" text-anchor="middle">Aaditya</text>
+<text x="590" y="402" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="16" font-weight="700" fill="#0F172A" text-anchor="middle">Padiya</text>
+</g>
+</svg>

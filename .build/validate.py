@@ -21,8 +21,9 @@ def check(label, ok, detail=""):
 
 
 # --- SVGs ---
-for f in ["assets/dark.svg", "assets/light.svg", "favicon.svg"]:
-    path = os.path.join(ROOT, f)
+svg_files = sorted(glob.glob(os.path.join(ROOT, "assets", "*.svg"))) + [os.path.join(ROOT, "favicon.svg")]
+for path in svg_files:
+    f = os.path.relpath(path, ROOT).replace(os.sep, "/")
     if not os.path.exists(path):
         check(f, False, "missing")
         continue
@@ -40,11 +41,17 @@ for f in ["assets/dark.svg", "assets/light.svg", "favicon.svg"]:
     ids = re.findall(r'id="([^"]+)"', src)
     dup = [k for k, v in collections.Counter(ids).items() if v > 1]
     check(f"{f} unique ids ({len(set(ids))})", not dup, str(dup))
+    unresolved = sorted({r for r in re.findall(r"url\(#([^)]+)\)", src) if r not in ids}
+                        | {r for r in re.findall(r'href="#([^"]+)"', src) if r not in ids})
+    check(f"{f} all url(#)/href refs resolve", not unresolved, str(unresolved))
+    check(f"{f} has title+desc", "<title" in src and "<desc" in src)
+    n_anim = len(re.findall(r"<animate(?:Transform|Motion)?[\s>]", src))
+    check(f"{f} SMIL-animated ({n_anim} animations)", n_anim > 0)
     size = os.path.getsize(path)
-    check(f"{f} size {size/1024:.1f} KB < 1024 KB", size < 1024 * 1024)
+    check(f"{f} size {size/1024:.1f} KB < 150 KB", size < 150 * 1024)
 
 # --- JSON ---
-for f in glob.glob(os.path.join(ROOT, "*.json")):
+for f in glob.glob(os.path.join(ROOT, "*.json")) + glob.glob(os.path.join(ROOT, "data", "*.json")):
     rel = os.path.relpath(f, ROOT)
     try:
         json.load(open(f, encoding="utf-8"))

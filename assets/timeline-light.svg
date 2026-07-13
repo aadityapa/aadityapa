@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" width="1180" height="620" role="img" aria-labelledby="t d">
+<title id="t">Aaditya Padiya — Career Timeline</title>
+<desc id="d">Animated light-theme career timeline for Aaditya Padiya: BCA IT (2020-2023), IT Manager at Mediprobe Consultancy (2024), IT Engineer at Godrej Properties (2025), System Administrator at CludoBits IT Solutions (Nov 2025-present) and Director &amp; CTO at Nexovo Tech Services (Mar 2026-present).</desc>
+<defs>
+<linearGradient id="ag" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#2563EB"/><stop offset="0.5" stop-color="#06B6D4"/><stop offset="1" stop-color="#10B981"/>
+</linearGradient>
+<linearGradient id="sp" gradientUnits="userSpaceOnUse" x1="70" y1="0" x2="1110" y2="0">
+  <stop offset="0" stop-color="#2563EB"/><stop offset="0.5" stop-color="#06B6D4"/><stop offset="1" stop-color="#10B981"/>
+</linearGradient>
+<linearGradient id="bs" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1180" y2="620">
+  <stop offset="0" stop-color="#2563EB"/><stop offset="0.25" stop-color="#06B6D4"/>
+  <stop offset="0.5" stop-color="#10B981"/><stop offset="0.75" stop-color="#06B6D4"/>
+  <stop offset="1" stop-color="#2563EB"/>
+  <animateTransform attributeName="gradientTransform" type="rotate" from="0 590 310" to="360 590 310" dur="14s" repeatCount="indefinite"/>
+</linearGradient>
+<radialGradient id="b1" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#2563EB" stop-opacity="0.8"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="b2" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#06B6D4" stop-opacity="0.7"/><stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="b3" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#10B981" stop-opacity="0.6"/><stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0F172A" stop-opacity="0.10"/>
+  <stop offset="0.18" stop-color="#0F172A" stop-opacity="0.03"/>
+  <stop offset="1" stop-color="#0F172A" stop-opacity="0"/>
+</linearGradient>
+<filter id="fb" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="46"/>
+</filter>
+<filter id="fg" x="-80%" y="-80%" width="260%" height="260%">
+  <feGaussianBlur stdDeviation="3.2" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fs" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="9"/>
+</filter>
+<clipPath id="cv"><rect x="0" y="0" width="1180" height="620" rx="24"/></clipPath>
+</defs>
+<rect x="0" y="0" width="1180" height="620" rx="24" fill="#FFFFFF"/><g clip-path="url(#cv)" opacity="0.22">
+<circle cx="170" cy="120" r="240" fill="url(#b1)" filter="url(#fb)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;120 70;30 -40;0 0" dur="27s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1000" cy="500" r="260" fill="url(#b2)" filter="url(#fb)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;-140 -90;-30 50;0 0" dur="31s" repeatCount="indefinite"/>
+</circle>
+<circle cx="600" cy="80" r="200" fill="url(#b3)" filter="url(#fb)" opacity="0.8">
+  <animateTransform attributeName="transform" type="translate" values="0 0;-80 100;90 30;0 0" dur="24s" repeatCount="indefinite"/>
+</circle>
+</g><rect x="0" y="0" width="1180" height="620" rx="24" fill="url(#gl)" clip-path="url(#cv)"/><rect x="1.5" y="1.5" width="1177" height="617" rx="22.5" fill="none" stroke="url(#bs)" stroke-width="1.6" opacity="0.9"/><rect x="1.5" y="1.5" width="1177" height="617" rx="22.5" fill="none" stroke="url(#bs)" stroke-width="3" opacity="0.22" filter="url(#fs)"/>
+<text x="30" y="52" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="700" fill="#0F172A">Career Timeline</text>
+<text x="30" y="72" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11.5" fill="#64748B" xml:space="preserve">$ history --career --chronological</text>
+<text x="1150" y="52" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0E7490" text-anchor="end" xml:space="preserve">2020 &#8594; present</text>
+<path d="M70 312 H1110" stroke="#E2E8F0" stroke-width="2" fill="none"/>
+<path d="M70 312 H1110" stroke="url(#sp)" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="1040" stroke-dashoffset="1040" filter="url(#fg)" opacity="0.5">
+  <animate attributeName="stroke-dashoffset" from="1040" to="0" begin="0.4s" dur="2.5s" fill="freeze"/>
+</path>
+<path d="M70 312 H1110" stroke="url(#sp)" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="1040" stroke-dashoffset="1040">
+  <animate attributeName="stroke-dashoffset" from="1040" to="0" begin="0.4s" dur="2.5s" fill="freeze"/>
+</path><g opacity="0"><animate attributeName="opacity" values="0;1" begin="3.1s" dur="0.4s" fill="freeze"/>
+<circle r="5" fill="#06B6D4" filter="url(#fg)">
+  <animateMotion path="M78 312 H1102 H78" dur="12s" begin="2.9s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+</circle></g><g opacity="0"><animate attributeName="opacity" values="0;1" begin="0.54s" dur="0.35s" fill="freeze"/><circle cx="130" cy="312" r="11" fill="#FFFFFF" stroke="url(#ag)" stroke-width="2"/>
+<circle cx="130" cy="312" r="5.5" fill="url(#ag)"/>
+<circle cx="130" cy="312" r="11" fill="none" stroke="#06B6D4" stroke-width="1.5" opacity="0">
+  <animate attributeName="r" values="11;24" begin="0.84s" dur="2.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.7;0" begin="0.84s" dur="2.6s" repeatCount="indefinite"/>
+</circle><g stroke="#0E7490" stroke-width="1.6" fill="none" stroke-linejoin="round">
+<path d="M150 296 l11 4.5 l-11 4.5 l-11 -4.5 Z"/>
+<path d="M144 302.5 v5 c0 2.5 12 2.5 12 0 v-5"/>
+<path d="M161 300.5 v7"/>
+</g></g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.69s" dur="0.45s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 10;0 0" begin="0.69s" dur="0.45s" fill="freeze"/>
+<path d="M130 301 V280.0" stroke="#475569" stroke-width="1.3" stroke-dasharray="3 3" opacity="0.8"/>
+<rect x="34" y="136" width="206" height="142" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="34" y="136" width="206" height="142" rx="14" fill="url(#gl)"/>
+<rect x="46" y="137" width="136" height="1" fill="#0F172A" opacity="0.12"/>
+<rect x="34" y="136" width="3" height="142" rx="1.5" fill="url(#ag)" opacity="0.85"/><text x="51" y="158" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#0E7490" xml:space="preserve">2020 - 2023</text><text x="51" y="183" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#0F172A">BCA Information</text><text x="51" y="200" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#0F172A">Technology</text><text x="51" y="218" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569">Shri Shivaji Science</text><text x="51" y="233" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569">College, Amravati</text><text x="51" y="252" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#64748B">Foundation in IT &amp;</text><text x="51" y="266" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#64748B">computer applications</text></g><g opacity="0"><animate attributeName="opacity" values="0;1" begin="1.10s" dur="0.35s" fill="freeze"/><circle cx="362" cy="312" r="11" fill="#FFFFFF" stroke="url(#ag)" stroke-width="2"/>
+<circle cx="362" cy="312" r="5.5" fill="url(#ag)"/>
+<circle cx="362" cy="312" r="11" fill="none" stroke="#06B6D4" stroke-width="1.5" opacity="0">
+  <animate attributeName="r" values="11;24" begin="1.40s" dur="2.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.7;0" begin="1.40s" dur="2.6s" repeatCount="indefinite"/>
+</circle></g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="1.25s" dur="0.45s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 -10;0 0" begin="1.25s" dur="0.45s" fill="freeze"/>
+<path d="M362 323 V344" stroke="#475569" stroke-width="1.3" stroke-dasharray="3 3" opacity="0.8"/>
+<rect x="259" y="346" width="206" height="142" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="259" y="346" width="206" height="142" rx="14" fill="url(#gl)"/>
+<rect x="271" y="347" width="136" height="1" fill="#0F172A" opacity="0.12"/>
+<rect x="259" y="346" width="3" height="142" rx="1.5" fill="url(#ag)" opacity="0.85"/><text x="276" y="368" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#0E7490" xml:space="preserve">Jan 2024 - Jan 2025</text><text x="276" y="393" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#0F172A">IT Manager / Desktop</text><text x="276" y="410" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#0F172A">Support (L2)</text><text x="276" y="428" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569">Mediprobe Consultancy</text><text x="276" y="443" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569">Services, Pune</text><text x="276" y="462" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#64748B">99%+ uptime; -40% incident</text><text x="276" y="476" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#64748B">resolution time</text></g><g opacity="0"><animate attributeName="opacity" values="0;1" begin="1.66s" dur="0.35s" fill="freeze"/><circle cx="594" cy="312" r="11" fill="#FFFFFF" stroke="url(#ag)" stroke-width="2"/>
+<circle cx="594" cy="312" r="5.5" fill="url(#ag)"/>
+<circle cx="594" cy="312" r="11" fill="none" stroke="#06B6D4" stroke-width="1.5" opacity="0">
+  <animate attributeName="r" values="11;24" begin="1.96s" dur="2.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.7;0" begin="1.96s" dur="2.6s" repeatCount="indefinite"/>
+</circle></g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="1.81s" dur="0.45s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 10;0 0" begin="1.81s" dur="0.45s" fill="freeze"/>
+<path d="M594 301 V280.0" stroke="#475569" stroke-width="1.3" stroke-dasharray="3 3" opacity="0.8"/>
+<rect x="491" y="153" width="206" height="125" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="491" y="153" width="206" height="125" rx="14" fill="url(#gl)"/>
+<rect x="503" y="154" width="136" height="1" fill="#0F172A" opacity="0.12"/>
+<rect x="491" y="153" width="3" height="125" rx="1.5" fill="url(#ag)" opacity="0.85"/><text x="508" y="175" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#0E7490" xml:space="preserve">Jan 2025 - Oct 2025</text><text x="508" y="200" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#0F172A">IT Engineer (L2/L3)</text><text x="508" y="218" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569">Godrej Properties</text><text x="508" y="233" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569">Limited, Pune</text><text x="508" y="252" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#64748B">Designed 350-user network:</text><text x="508" y="266" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#64748B">dual-ISP failover, 9 VLANs</text></g><g opacity="0"><animate attributeName="opacity" values="0;1" begin="2.22s" dur="0.35s" fill="freeze"/><circle cx="826" cy="312" r="11" fill="#FFFFFF" stroke="url(#ag)" stroke-width="2"/>
+<circle cx="826" cy="312" r="5.5" fill="url(#ag)"/>
+<circle cx="826" cy="312" r="11" fill="none" stroke="#06B6D4" stroke-width="1.5" opacity="0">
+  <animate attributeName="r" values="11;24" begin="2.52s" dur="2.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.7;0" begin="2.52s" dur="2.6s" repeatCount="indefinite"/>
+</circle><circle cx="826" cy="312" r="17" fill="none" stroke="#10B981" stroke-width="2" filter="url(#fg)">
+  <animate attributeName="opacity" values="0.9;0.25;0.9" dur="1.8s" repeatCount="indefinite"/>
+  <animate attributeName="r" values="15;19;15" dur="1.8s" repeatCount="indefinite"/>
+</circle></g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="2.37s" dur="0.45s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 -10;0 0" begin="2.37s" dur="0.45s" fill="freeze"/>
+<path d="M826 323 V344" stroke="#475569" stroke-width="1.3" stroke-dasharray="3 3" opacity="0.8"/>
+<rect x="723" y="346" width="206" height="125" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="723" y="346" width="206" height="125" rx="14" fill="url(#gl)"/>
+<rect x="735" y="347" width="136" height="1" fill="#0F172A" opacity="0.12"/>
+<rect x="723" y="346" width="3" height="125" rx="1.5" fill="url(#ag)" opacity="0.85"/><text x="740" y="368" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#0E7490" xml:space="preserve">Nov 2025 - Present</text><circle cx="909" cy="364" r="3.2" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+</circle><text x="740" y="393" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#0F172A">System Administrator</text><text x="740" y="412" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569">CludoBits IT Solutions,</text><text x="740" y="426" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569">Pune</text><text x="740" y="446" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#64748B">50+ endpoints at 99.9%</text><text x="740" y="459" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#64748B">uptime; AI/LLM deployments</text></g><g opacity="0"><animate attributeName="opacity" values="0;1" begin="2.77s" dur="0.35s" fill="freeze"/><circle cx="1058" cy="312" r="11" fill="#FFFFFF" stroke="url(#ag)" stroke-width="2"/>
+<circle cx="1058" cy="312" r="5.5" fill="url(#ag)"/>
+<circle cx="1058" cy="312" r="11" fill="none" stroke="#06B6D4" stroke-width="1.5" opacity="0">
+  <animate attributeName="r" values="11;24" begin="3.07s" dur="2.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.7;0" begin="3.07s" dur="2.6s" repeatCount="indefinite"/>
+</circle><circle cx="1058" cy="312" r="17" fill="none" stroke="#10B981" stroke-width="2" filter="url(#fg)">
+  <animate attributeName="opacity" values="0.9;0.25;0.9" dur="1.8s" repeatCount="indefinite"/>
+  <animate attributeName="r" values="15;19;15" dur="1.8s" repeatCount="indefinite"/>
+</circle></g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="2.92s" dur="0.45s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 10;0 0" begin="2.92s" dur="0.45s" fill="freeze"/>
+<path d="M1058 301 V280.0" stroke="#475569" stroke-width="1.3" stroke-dasharray="3 3" opacity="0.8"/>
+<rect x="940" y="153" width="206" height="125" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="940" y="153" width="206" height="125" rx="14" fill="url(#gl)"/>
+<rect x="952" y="154" width="136" height="1" fill="#0F172A" opacity="0.12"/>
+<rect x="940" y="153" width="3" height="125" rx="1.5" fill="url(#ag)" opacity="0.85"/><text x="957" y="175" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#0E7490" xml:space="preserve">Mar 2026 - Present</text><circle cx="1126" cy="171" r="3.2" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+</circle><text x="957" y="200" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#0F172A">Director &amp; CTO</text><text x="957" y="218" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569">Nexovo Tech Services,</text><text x="957" y="233" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569">Pune</text><text x="957" y="252" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#64748B">End-to-end IT solutions,</text><text x="957" y="266" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10.5" fill="#64748B">cloud &amp; product delivery</text></g>
+</svg>

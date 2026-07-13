@@ -31,10 +31,18 @@ jobs:
           required = [
               "README.md", "LICENSE", ".gitignore", "robots.txt", "sitemap.xml",
               "favicon.svg", "profile.json", "skills.json", "theme.json",
-              "metadata.json", "assets/dark.svg", "assets/light.svg",
+              "metadata.json", "data/profile.json",
+              "assets/dark.svg", "assets/light.svg",
+              "assets/ecosystem-dark.svg", "assets/ecosystem-light.svg",
+              "assets/architecture-dark.svg", "assets/architecture-light.svg",
+              "assets/timeline-dark.svg", "assets/timeline-light.svg",
+              "assets/certifications-dark.svg", "assets/certifications-light.svg",
+              "assets/projects-dark.svg", "assets/projects-light.svg",
               "docs/animation-report.md", "docs/design-system.md",
               "docs/svg-optimization-report.md", "docs/performance-report.md",
               "docs/accessibility-report.md", "docs/repository-structure.md",
+              "reports/validation-report.md", "reports/optimization-report.md",
+              "reports/accessibility-report.md", "reports/performance-report.md",
           ]
           for f in required:
               if not os.path.exists(f):
@@ -50,7 +58,8 @@ jobs:
                   print(f"::error::README references missing path: {r}")
                   fail += 1
 
-          for f in ("profile.json", "skills.json", "theme.json", "metadata.json"):
+          for f in ("profile.json", "skills.json", "theme.json", "metadata.json",
+                    "data/profile.json"):
               try:
                   json.load(open(f, encoding="utf-8"))
               except Exception as e:

@@ -1,14 +1,17 @@
 # SVG Optimization Report
 
-## File Sizes (as shipped)
+For the full v12 sizing table (all 13 files) and the v12 optimization decision log, see [`reports/optimization-report.md`](../reports/optimization-report.md).
+
+## File Sizes (as shipped, v12)
 
 | File | Size | Budget | Headroom |
 |------|------|--------|----------|
-| `assets/dark.svg` | 32,518 B (31.8 KB) | < 1 MB (target < 300 KB) | 97% under target |
-| `assets/light.svg` | 32,519 B (31.8 KB) | < 1 MB (target < 300 KB) | 97% under target |
+| `assets/dark.svg` | 44,009 B (43.0 KB) | < 150 KB | 71% under budget |
+| `assets/light.svg` | 44,010 B (43.0 KB) | < 150 KB | 71% under budget |
+| Five visualization pairs | 14.8–35.3 KB each | < 150 KB | 76–90% under budget |
 | `favicon.svg` | 1,420 B (1.4 KB) | — | — |
 
-Both hero files land at ~3% of the 1 MB hard limit and ~11% of the 300 KB comfort target, with 111 live animations each. Sizes reflect the post-generation pass of `.build/optimize_svgs.py`, a SMIL-safe local optimizer that hoists shared inherited attributes (font stack, `xml:space`, ASCII-block fill/size/anchor), trims redundant trailing zeros in SMIL numeric lists, and collapses inter-element whitespace — a ~22% reduction over raw generator output with zero animation or rendering changes.
+Both hero files carry 179 live animations each (the v12 photo portrait + neural constellation added ~68 over v11). Sizes reflect the post-generation pass of `.build/optimize_svgs.py`, a SMIL-safe local optimizer that hoists shared inherited attributes (font stack, `xml:space`, portrait-block fill/size/anchor), trims redundant trailing zeros in SMIL numeric lists, and collapses inter-element whitespace — a ~20% reduction over raw generator output with a pixel-identical render (verified by headless-Chrome diff).
 
 ## How the Size Was Kept Down
 
@@ -21,7 +24,7 @@ Both hero files land at ~3% of the 1 MB hard limit and ~11% of the 300 KB comfor
 
 ## SVGO Configuration (`.svgo.config.mjs`)
 
-The `svg-optimize.yml` workflow runs SVGO 3 as a **dry-run check** (output to `/tmp`, never overwriting sources) with these overrides, all chosen to protect the SMIL system:
+The `optimize-svg.yml` workflow runs SVGO 3 as a **dry-run check** (output to `/tmp`, never overwriting sources) with these overrides, all chosen to protect the SMIL system:
 
 | Override | Why |
 |----------|-----|
@@ -41,7 +44,7 @@ A post-optimization CI step asserts that `<animate>`, `<animateTransform>`, and 
 - `feTurbulence` runs once over a static rect (no animated filter parameters).
 - Total filtered elements: 4 aurora + 1 noise + glow/soft-shadow users; all other motion is transform/opacity-only, which stays on the GPU-friendly path.
 
-## Optimization Pass — 2026-07-13
+## Optimization Pass — 2026-07-13 (v11 baseline, historical)
 
 A minification pass was applied to the shipped files (Python pre-pass + SVGO 3 with the repo config, `convertShapeToPath`/`mergePaths` additionally disabled because they rewrite SMIL-animated `<rect>` targets):
 

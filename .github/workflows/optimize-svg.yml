@@ -8,13 +8,13 @@ on:
       - "assets/**.svg"
       - "favicon.svg"
       - ".svgo.config.mjs"
-      - ".github/workflows/svg-optimize.yml"
+      - ".github/workflows/optimize-svg.yml"
   pull_request:
     paths:
       - "assets/**.svg"
       - "favicon.svg"
       - ".svgo.config.mjs"
-      - ".github/workflows/svg-optimize.yml"
+      - ".github/workflows/optimize-svg.yml"
   workflow_dispatch:
 
 permissions:
@@ -48,16 +48,21 @@ jobs:
       - name: Verify SMIL animations survived optimization
         run: |
           python3 - <<'EOF'
-          import sys
+          import glob, os, sys
           fail = 0
-          for f in ("dark.svg", "light.svg", "favicon.svg"):
-              src = open(f"/tmp/{f}", encoding="utf-8").read()
-              for tag in ("<animate", "<animateTransform"):
-                  if tag not in src:
-                      print(f"::error::{f} lost {tag} elements during optimization")
+          # Every shipped SVG is animated; compare each optimized copy in /tmp
+          # against its source so no SVGO pass can silently strip SMIL.
+          for src_path in sorted(glob.glob("assets/*.svg") + ["favicon.svg"]):
+              name = os.path.basename(src_path)
+              opt = open(f"/tmp/{name}", encoding="utf-8").read()
+              src = open(src_path, encoding="utf-8").read()
+              for tag in ("<animate", "<animateTransform", "<animateMotion"):
+                  if tag in src and tag not in opt:
+                      print(f"::error::{name} lost {tag} elements during optimization")
                       fail = 1
-              if "<animateMotion" not in src and f != "favicon.svg":
-                  print(f"::error::{f} lost animateMotion elements")
+              if "<animate" not in opt:
+                  print(f"::error::{name} has no SMIL animations after optimization")
                   fail = 1
+              print(f"{name}: SMIL intact")
           sys.exit(fail)
           EOF

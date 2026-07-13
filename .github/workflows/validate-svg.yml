@@ -7,12 +7,12 @@ on:
     paths:
       - "assets/**.svg"
       - "favicon.svg"
-      - ".github/workflows/svg-validate.yml"
+      - ".github/workflows/validate-svg.yml"
   pull_request:
     paths:
       - "assets/**.svg"
       - "favicon.svg"
-      - ".github/workflows/svg-validate.yml"
+      - ".github/workflows/validate-svg.yml"
   workflow_dispatch:
 
 permissions:

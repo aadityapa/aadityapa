@@ -1,5 +1,5 @@
 {
-  "$schema_note": "Structured profile extracted from Aaditya_Padiya_CV.pdf",
+  "$schema_note": "Structured profile extracted from Aaditya_Padiya_CV.pdf. Kept in sync with data/profile.json, which is the canonical v12 source of truth (richer schema: verified GitHub repos, dated certifications, grouped skills).",
   "fullName": "Aaditya Padiya",
   "currentPosition": "System Administrator",
   "professionalTitle": "System Administrator | IT Infrastructure & Cloud (AWS) | Networking | DevOps | AI Infrastructure",
@@ -20,6 +20,16 @@
     "since": "2025-11"
   },
   "experience": [
+    {
+      "role": "Director & Chief Technology Officer",
+      "company": "Nexovo Tech Services Private Limited",
+      "location": "Pune",
+      "period": "Mar 2026 - Present",
+      "highlights": [
+        "Lead end-to-end IT solutions: cloud deployment, infrastructure setup, website and application development, IT consulting",
+        "Deployed live production websites and applications, including SEO-optimized platforms ranking on Google search"
+      ]
+    },
     {
       "role": "System Administrator",
       "company": "CludoBits IT Solutions Pvt. Ltd.",

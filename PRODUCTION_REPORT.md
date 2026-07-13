@@ -1,5 +1,28 @@
 # Production Readiness Report
 
+## v12 Upgrade Addendum (2026-07-13, supersedes inventory numbers below)
+
+The repository was upgraded from the audited v11 state to **ULTIMATE v12**. The v11 audit below remains the baseline record; everything it fixed stays fixed. What changed in v12:
+
+**New/changed artwork** (all SMIL-only, generated, validated, and render-inspected — see `reports/validation-report.md`):
+
+- **Hero** (`assets/dark.svg`/`light.svg`, now 43.0 KB / 179 animations each): the generic ASCII avatar was replaced with a **real photo-derived ASCII portrait** of Aaditya (pipeline: `.build/photo_to_ascii.py` → `.build/ascii_face.py` → generator; source: the portfolio site portrait). Added a neural-network constellation background layer (14 pulsing nodes, 16 dash-flow edges) and a breathing-scale animation on the portrait. Caret-tracking, role carousel, info rows, pills, and socials unchanged. Optimized by the SMIL-safe pass; pixel-diff vs raw output: identical frames.
+- **Five new visualization families** (dark+light each): `ecosystem` (orbital tech map, 68 animations), `architecture` (8-section infrastructure showcase, 76), `timeline` (career spine with 5 nodes, 40), `certifications` (4 badge cards, 24), `projects` (8 real-project cards, 73). Family total: **922 SMIL animations across 13 files, 351 KB combined, largest file 43 KB** (budget 150 KB/file).
+
+**Data:** new canonical `data/profile.json` (identity, dated experience incl. the Nexovo Tech Services Director & CTO role from the LinkedIn export, certifications, grouped skills, projects with **API-verified repo links** — the 17 public repos were checked live; the CV's `ritikainfotech` repo link does not exist and is linked live-site-only). Root `profile.json` kept in sync (legacy flat schema).
+
+**README v12:** new sections embedding all five visualization pairs; project table extended to 8 real projects; **stats/top-langs switched** from the paused `github-readme-stats.vercel.app` (503, public deployment paused) to the community HA mirror `github-readme-stats.shion.dev` (verified 200); **trophy embed removed** (`github-profile-trophy.vercel.app` → 402, shared instance paywalled) in favor of the curated achievements list. markdownlint: 0 errors.
+
+**Workflows (7):** renamed to the requested scheme keeping hardened contents — `validate-svg.yml`, `optimize-svg.yml`, `markdown.yml`, `repository-health.yml` (from svg-validate/svg-optimize/markdown-lint/health-check); `snake.yml` + `link-check.yml` unchanged in name. **New `stats-refresh.yml`**: daily cron re-dispatching the snake (`actions: write` only). The SVGO SMIL-survival check now covers **every** `assets/*.svg` dynamically; `repository-health.yml` requires all 12 new assets, `data/profile.json`, and the 4 v12 reports.
+
+**Docs/reports:** new `reports/` (validation, optimization, accessibility, performance — fresh measured data); `docs/design-system.md` (+v12 components), `docs/repository-structure.md`, `docs/animation-report.md` rewritten to the v12 inventory. `.gitignore` allowlist extended to the 12 tracked `.build/` scripts.
+
+**v12 score: 98/100.** The v11 −2 deduction for the two dead embeds is resolved (mirror + removal); −1 remains for the SMIL `prefers-reduced-motion` platform limit; −1 for the ASCII portrait's resolution ceiling (hairstyle, beard, face shape and glasses hint are clearly recognizable at 56×25 chars, but it is an impression, not a photograph).
+
+---
+
+## v11 Baseline Audit (2026-07-13, pre-v12)
+
 **Repository:** `aadityapa/aadityapa` (GitHub profile repository, pre-push)
 **Audit date:** 2026-07-13
 **Scope:** 28-category production audit with automatic remediation; all checks re-run after every fix until every category passed.

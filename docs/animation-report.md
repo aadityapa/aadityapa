@@ -1,26 +1,26 @@
 # Animation Report
 
-Complete inventory of the SMIL animation system in `assets/dark.svg` and `assets/light.svg`. Both files share identical timing; only colors differ. Everything is `<animate>`, `<animateTransform>`, or `<animateMotion>` — no CSS, no JavaScript, which is what keeps the banners alive inside GitHub's sandboxed README renderer.
+Complete inventory of the SMIL animation system across all shipped SVGs (v12). Dark/light pairs share identical timing; only colors differ. Everything is `<animate>`, `<animateTransform>`, or `<animateMotion>` — no CSS, no JavaScript, which is what keeps the banners alive inside GitHub's sandboxed README renderer.
 
-## Timeline Overview
+## Hero Timeline Overview
 
 The intro plays as a choreographed sequence over ~7.6 s, then hands off to infinite ambient loops.
 
 | Time (s) | Event |
 |----------|-------|
-| 0.0 | Aurora, particles, scanline, border shimmer, noise all running (infinite) |
-| 0.4 – 2.9 | ASCII avatar reveals line by line (18 rows × 0.14 s stagger) |
+| 0.0 | Aurora, neural constellation, particles, scanline, border shimmer, noise all running (infinite) |
+| 0.35 – 3.3 | ASCII portrait reveals line by line (25 rows × 0.11 s stagger) |
 | 0.9 – 2.8 | "Hi, I'm Aaditya Padiya" types out (22 discrete steps) |
 | 2.8 | Wave emoji pops in and rocks ±14° for 3 cycles |
 | 3.0 – 5.2 | 8 profile info rows slide in (0.32 s stagger) |
 | 3.0 | Rotating role carousel begins (27 s cycle, infinite) |
-| 3.2 | Gradient sweep starts flowing across the ASCII avatar (masked) |
+| 3.3 | Gradient sweep starts flowing across the ASCII portrait (masked) |
 | 3.4 – 4.9 | Terminal tail lines print (`whoami`, `uptime`) |
 | 5.4 | Left-panel block cursor starts blinking (infinite) |
 | 5.8 – 7.1 | 12 skill pills fade in (0.12 s stagger) |
 | 7.0 | Social row fades in; glow pulses continue (infinite) |
 
-## Ambient Loop Inventory
+## Hero Ambient Loop Inventory
 
 | Animation | Element | Type | Duration | Notes |
 |-----------|---------|------|----------|-------|
@@ -28,6 +28,8 @@ The intro plays as a choreographed sequence over ~7.6 s, then hands off to infin
 | Aurora blob 2 | cyan radial, 320 r | `animateTransform` translate | 31 s | counter-drift |
 | Aurora blob 3 | emerald radial, 240 r | `animateTransform` translate | 23 s | |
 | Aurora blob 4 | violet radial, 220 r | `animateTransform` translate | 29 s | |
+| Neural constellation | 14 nodes + 16 dashed edges | `animate` dashoffset/opacity/r | 4–11 s | staggered pulses, 12–16% layer opacity |
+| Portrait breathe | ASCII group | `animateTransform` scale 1→1.012 | 7 s | nested around portrait center |
 | Radial light L | cyan glow behind avatar | `animate` opacity 0.10→0.24 | 6 s | |
 | Radial light R | violet glow | `animate` opacity 0.06→0.16 | 8 s | |
 | Border shimmer | card stroke gradient | `animateTransform` rotate 0→360° | 14 s | sharp stroke + blurred bloom copy |
@@ -45,7 +47,21 @@ The intro plays as a choreographed sequence over ~7.6 s, then hands off to infin
 | Favicon gradient | `#fag` | `animateTransform` rotate | 8 s | |
 | Favicon dot | 2.4 px circle | `animate` opacity | 2.4 s | |
 
-**Totals per hero SVG: 111 animation elements** — 86 `animate`, 17 `animateTransform`, 8 `animateMotion` (counted from the shipped files). The favicon adds 2 more (rotating gradient + pulsing dot).
+**Totals per hero SVG: 179 animation elements** — 153 `animate`, 18 `animateTransform`, 8 `animateMotion` (counted from the shipped files). The favicon adds 2 more (rotating gradient + pulsing dot).
+
+## v12 Visualization Inventory
+
+Counted from the shipped files (dark/light pairs are identical):
+
+| File | Animations | Signature motion |
+|------|-----------:|------------------|
+| `ecosystem-*.svg` | 68 | Counter-rotating orbital rings (60 s / 90 s) with per-node upright counter-rotation, traveling pulse dots (`animateMotion`), center-node glow pulse |
+| `architecture-*.svg` | 76 | Dash-offset flows on connectors, CI/CD pipeline patrol dot with sequenced stage glows, LED blink racks, monitoring chart self-draw, security scan sweep |
+| `timeline-*.svg` | 40 | Spine self-draw (stroke-dasharray reveal), sequential node pops with pulse halos, patrol glow dot on infinite loop |
+| `certifications-*.svg` | 24 | Rotating medallion gradient rings, staggered scale-pop reveals, shimmer sweeps every ~7 s, VERIFIED pill pulses |
+| `projects-*.svg` | 73 | Staggered card fade+rise reveals, status-dot pulses, breathing border glows, chip shimmer |
+
+Grand total across the 13 shipped SVGs: **922 animation elements** (2×179 hero + 2×68 ecosystem + 2×76 architecture + 2×40 timeline + 2×24 certifications + 2×73 projects + 2 favicon).
 
 ## Technique Notes
 

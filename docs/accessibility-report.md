@@ -1,5 +1,7 @@
 # Accessibility Report
 
+For the v12 audit covering all 13 SVGs (contrast matrix, semantics, motion inventory), see [`reports/accessibility-report.md`](../reports/accessibility-report.md); this document covers the hero and favicon in depth.
+
 ## Semantic Structure
 
 Both hero SVGs and the favicon carry a full accessibility layer:

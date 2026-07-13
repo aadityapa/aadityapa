@@ -63,7 +63,7 @@ def optimize(path):
     #    the <mask>. Both are inherited by content.
     for holder in root.iter():
         kids = [c for c in holder if c.tag == f"{{{SVG}}}text"
-                and c.get("font-size") == "11"]
+                and c.get("font-size") == "10.5"]
         if len(kids) < 10:
             continue
         for attr in ("font-size", "text-anchor", "fill"):
@@ -109,7 +109,7 @@ def optimize(path):
 
     out = ET.tostring(root, encoding="unicode")
     n_anim = len(re.findall(r"<animate(?:Transform|Motion)?[\s>]", out))
-    assert n_anim == 111, f"animation count {n_anim} != 111"
+    assert n_anim == 179, f"animation count {n_anim} != 179 (v12 hero inventory)"
     open(path, "w", encoding="utf-8", newline="\n").write(out)
     print(path, "->", len(out.encode("utf-8")), "bytes, animations:", n_anim)
 

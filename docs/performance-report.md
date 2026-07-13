@@ -1,19 +1,22 @@
 # Performance Report
 
+For the v12 measured totals (all 13 SVGs, 351 KB family payload, 922 animations) see [`reports/performance-report.md`](../reports/performance-report.md); this document explains the techniques.
+
 ## Payload
 
 | Asset | Size | Gzip-friendly? |
 |-------|------|----------------|
-| `assets/dark.svg` | 32,518 B | Yes — repetitive XML compresses to roughly a quarter over the wire |
-| `assets/light.svg` | 32,519 B | Yes |
+| `assets/dark.svg` | 44,009 B | Yes — repetitive XML compresses to roughly a quarter over the wire |
+| `assets/light.svg` | 44,010 B | Yes |
+| Five visualization pairs | 14.8–35.3 KB each | Yes |
 | `favicon.svg` | 1,420 B | Yes |
-| `README.md` | ~13 KB | Yes |
+| `README.md` | ~15 KB | Yes |
 
-The browser downloads exactly **one** hero SVG (the `<picture>` element's media query picks dark or light), so the profile's first-party image payload is ~32 KB. Everything else on the profile page (stats cards, badges, snake) is third-party and lazy-rendered by GitHub.
+The browser downloads exactly **one file per `<picture>` pair** (the media query picks dark or light), so a visit costs ≈183 KB of first-party SVG. Everything else on the profile page (stats cards, badges, snake) is third-party and lazy-rendered by GitHub.
 
 ## Why the SVGs Render Cheaply
 
-1. **Transform/opacity-dominated motion.** 103 of the 111 animations mutate only `opacity`, `transform`, or clip/gradient offsets — properties compositors handle without relayout. The 8 `animateMotion` particles move tiny 1.2–2.4 px circles.
+1. **Transform/opacity-dominated motion.** The overwhelming majority of the 179 hero animations (and the visualization files' loops) mutate only `opacity`, `transform`, dash offsets, or clip/gradient offsets — properties compositors handle without relayout. The 8 `animateMotion` particles move tiny 1.2–2.4 px circles.
 2. **Blur budget is bounded.** The expensive `feGaussianBlur stdDeviation="46"` aurora filter applies to exactly 4 circles. Glow (`stdDeviation="3.2"`) and soft-shadow (`9`) filters are shared definitions applied to small regions (icons, pills, text groups), not the full canvas.
 3. **Static turbulence.** The `feTurbulence` noise runs over one static rect with no animated filter parameters, so it rasterizes once.
 4. **No layout thrash by design.** SMIL timelines are declarative; the browser schedules them natively with no script ticks, no `requestAnimationFrame`, no style recalculation.
@@ -27,9 +30,9 @@ The browser downloads exactly **one** hero SVG (the `<picture>` element's media 
 
 ## Third-Party Widgets
 
-Stats cards (github-readme-stats, streak-stats, activity-graph, trophies, komarev) are served by their own CDNs and cached by camo. They are `<img>` elements — if any service is slow or down, the rest of the page renders unaffected. The contribution snake is pre-rendered by the `snake.yml` workflow every 12 hours and served as a static SVG from the `output` branch, costing nothing at view time.
+Stats cards (github-readme-stats mirror, streak-stats, activity-graph, komarev) are served by their own CDNs and cached by camo. They are `<img>` elements — if any service is slow or down, the rest of the page renders unaffected. The contribution snake is pre-rendered by the `snake.yml` workflow every 12 hours (plus a daily `stats-refresh.yml` dispatch) and served as a static SVG from the `output` branch, costing nothing at view time.
 
 ## CI Guardrails
 
-- `svg-validate.yml` fails the build if either hero SVG exceeds 1 MB or gains external references.
-- `svg-optimize.yml` tracks the SVGO-optimized size on every asset change, making size regressions visible in the job log.
+- `validate-svg.yml` fails the build if any shipped SVG exceeds 1 MB or gains external references.
+- `optimize-svg.yml` tracks the SVGO-optimized size of every `assets/*.svg` on each change and asserts no SMIL element is lost, making size or animation regressions visible in the job log.

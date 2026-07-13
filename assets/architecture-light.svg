@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 800" width="1180" height="800" role="img" aria-labelledby="t d">
+<title id="t">Aaditya Padiya — Architecture &amp; Infrastructure Showcase</title>
+<desc id="d">Animated light-theme board of eight architecture diagrams by Aaditya Padiya: enterprise tiers, microservices, cloud VPC, CI/CD pipeline, monitoring, server infrastructure, networking with VLANs, and security shield.</desc>
+<defs>
+<linearGradient id="ag" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#2563EB"/><stop offset="0.5" stop-color="#06B6D4"/><stop offset="1" stop-color="#10B981"/>
+</linearGradient>
+<linearGradient id="bs" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1180" y2="800">
+  <stop offset="0" stop-color="#2563EB"/><stop offset="0.25" stop-color="#06B6D4"/>
+  <stop offset="0.5" stop-color="#10B981"/><stop offset="0.75" stop-color="#06B6D4"/>
+  <stop offset="1" stop-color="#2563EB"/>
+  <animateTransform attributeName="gradientTransform" type="rotate" from="0 590 400" to="360 590 400" dur="14s" repeatCount="indefinite"/>
+</linearGradient>
+<radialGradient id="b1" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#2563EB" stop-opacity="0.8"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="b2" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#06B6D4" stop-opacity="0.7"/><stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="b3" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#10B981" stop-opacity="0.6"/><stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0F172A" stop-opacity="0.10"/>
+  <stop offset="0.18" stop-color="#0F172A" stop-opacity="0.03"/>
+  <stop offset="1" stop-color="#0F172A" stop-opacity="0"/>
+</linearGradient>
+<filter id="fb" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="46"/>
+</filter>
+<filter id="fg" x="-80%" y="-80%" width="260%" height="260%">
+  <feGaussianBlur stdDeviation="3.2" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fs" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="9"/>
+</filter>
+<clipPath id="cv"><rect x="0" y="0" width="1180" height="800" rx="24"/></clipPath>
+<marker id="ah" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+  <path d="M0.5 0.5 L7 4 L0.5 7.5 Z" fill="#475569"/>
+</marker>
+</defs>
+<rect x="0" y="0" width="1180" height="800" rx="24" fill="#FFFFFF"/><g clip-path="url(#cv)" opacity="0.22">
+<circle cx="150" cy="110" r="230" fill="url(#b1)" filter="url(#fb)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;110 70;30 -40;0 0" dur="27s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1010" cy="640" r="250" fill="url(#b2)" filter="url(#fb)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;-130 -90;-30 50;0 0" dur="31s" repeatCount="indefinite"/>
+</circle>
+<circle cx="620" cy="360" r="190" fill="url(#b3)" filter="url(#fb)" opacity="0.8">
+  <animateTransform attributeName="transform" type="translate" values="0 0;-80 110;90 30;0 0" dur="24s" repeatCount="indefinite"/>
+</circle>
+</g><rect x="0" y="0" width="1180" height="800" rx="24" fill="url(#gl)" clip-path="url(#cv)"/><rect x="1.5" y="1.5" width="1177" height="797" rx="22.5" fill="none" stroke="url(#bs)" stroke-width="1.6" opacity="0.9"/><rect x="1.5" y="1.5" width="1177" height="797" rx="22.5" fill="none" stroke="url(#bs)" stroke-width="3" opacity="0.22" filter="url(#fs)"/>
+<text x="30" y="58" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="700" fill="#0F172A">Architecture &amp; Infrastructure Showcase</text>
+<text x="30" y="78" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11.5" fill="#64748B" xml:space="preserve">$ blueprint --render --all-systems</text>
+<text x="1152" y="58" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0E7490" text-anchor="end" xml:space="preserve">// how i build</text>
+<circle cx="1034" cy="54" r="4" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+</circle>
+<g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.20s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 16;0 0" begin="0.20s" dur="0.5s" fill="freeze"/>
+<rect x="28" y="92" width="263" height="328" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="28" y="92" width="263" height="328" rx="14" fill="url(#gl)"/>
+<rect x="42" y="93" width="183" height="1" fill="#0F172A" opacity="0.12"/>
+<text x="44" y="119" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" font-weight="600" fill="#0E7490" letter-spacing="1.5" xml:space="preserve">ENTERPRISE ARCHITECTURE</text>
+<text x="275" y="119" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#64748B" text-anchor="end" xml:space="preserve">01</text>
+<path d="M44 130 h231" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="72" y="154" width="176" height="48" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="160" y="182" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#0E7490" text-anchor="middle" xml:space="preserve">CLIENT TIER</text><rect x="72" y="154" width="4" height="48" rx="2" fill="url(#ag)" opacity="0.85"/><path d="M134 205 V233" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 5" marker-end="url(#ah)"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.4s" repeatCount="indefinite"/></path><path d="M186 233 V205" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 5" marker-end="url(#ah)"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.8s" repeatCount="indefinite"/></path><rect x="72" y="238" width="176" height="48" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="160" y="266" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#475569" text-anchor="middle" xml:space="preserve">APP TIER</text><rect x="72" y="238" width="4" height="48" rx="2" fill="url(#ag)" opacity="0.85"/><path d="M134 289 V317" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 5" marker-end="url(#ah)"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.4s" repeatCount="indefinite"/></path><path d="M186 317 V289" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 5" marker-end="url(#ah)"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.8s" repeatCount="indefinite"/></path><rect x="72" y="322" width="176" height="48" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="160" y="350" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#047857" text-anchor="middle" xml:space="preserve">DATA TIER</text><rect x="72" y="322" width="4" height="48" rx="2" fill="url(#ag)" opacity="0.85"/><text x="160" y="400" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#64748B" text-anchor="middle" xml:space="preserve">request / response flow</text>
+</g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.34s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 16;0 0" begin="0.34s" dur="0.5s" fill="freeze"/>
+<rect x="315" y="92" width="263" height="328" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="315" y="92" width="263" height="328" rx="14" fill="url(#gl)"/>
+<rect x="329" y="93" width="183" height="1" fill="#0F172A" opacity="0.12"/>
+<text x="331" y="119" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" font-weight="600" fill="#0E7490" letter-spacing="1.5" xml:space="preserve">MICROSERVICES</text>
+<text x="562" y="119" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#64748B" text-anchor="end" xml:space="preserve">02</text>
+<path d="M331 130 h231" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="384" y="158" width="124" height="38" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="446" y="181" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#0E7490" text-anchor="middle" xml:space="preserve">API GATEWAY</text><path d="M446 196 C446 238 368 258 368 296" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 5"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.5s" repeatCount="indefinite"/></path><rect x="334" y="300" width="66" height="44" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="368" y="325" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#475569" text-anchor="middle" xml:space="preserve">AUTH</text><circle cx="392" cy="309" r="3" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+</circle><path d="M446 196 C446 238 446 258 446 296" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 5"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.8s" repeatCount="indefinite"/></path><rect x="414" y="300" width="66" height="44" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="446" y="325" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#475569" text-anchor="middle" xml:space="preserve">ORDERS</text><circle cx="470" cy="309" r="3" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" repeatCount="indefinite"/>
+</circle><path d="M446 196 C446 238 526 258 526 296" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 5"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="2.1s" repeatCount="indefinite"/></path><rect x="492" y="300" width="66" height="44" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="526" y="325" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#475569" text-anchor="middle" xml:space="preserve">USERS</text><circle cx="550" cy="309" r="3" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/>
+</circle><text x="446" y="400" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#64748B" text-anchor="middle" xml:space="preserve">3 services | healthy</text>
+</g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.48s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 16;0 0" begin="0.48s" dur="0.5s" fill="freeze"/>
+<rect x="602" y="92" width="263" height="328" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="602" y="92" width="263" height="328" rx="14" fill="url(#gl)"/>
+<rect x="616" y="93" width="183" height="1" fill="#0F172A" opacity="0.12"/>
+<text x="618" y="119" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" font-weight="600" fill="#0E7490" letter-spacing="1.5" xml:space="preserve">CLOUD ARCHITECTURE</text>
+<text x="849" y="119" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#64748B" text-anchor="end" xml:space="preserve">03</text>
+<path d="M618 130 h231" stroke="#E2E8F0" stroke-width="1"/>
+<path d="M700 170 a14 14 0 0 1 2-27 a19 19 0 0 1 36-6 a13 13 0 0 1 14 20 a11 11 0 0 1-6 13 Z"
+ fill="#F1F5F9" fill-opacity="0.9" stroke="url(#ag)" stroke-width="1.4"/>
+<text x="734" y="161" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9" fill="#0E7490" text-anchor="middle" xml:space="preserve">AWS</text><rect x="628" y="210" width="211" height="158" rx="10" fill="none" stroke="#475569" stroke-width="1.2" stroke-dasharray="6 5" opacity="0.8"/><text x="638" y="228" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9" fill="#64748B" xml:space="preserve">VPC 10.0.0.0/16</text><path d="M734 172 V206" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 5" marker-end="url(#ah)"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.5s" repeatCount="indefinite"/></path><rect x="644" y="242" width="58" height="34" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="673" y="262" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#0E7490" text-anchor="middle" xml:space="preserve">EC2</text><rect x="765" y="242" width="58" height="34" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="794" y="262" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#0E7490" text-anchor="middle" xml:space="preserve">S3</text><rect x="704" y="318" width="58" height="34" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="734" y="338" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#047857" text-anchor="middle" xml:space="preserve">RDS</text><path d="M673 276 L714 318" fill="none" stroke="#E2E8F0" stroke-width="1.3"/><circle r="3" fill="#06B6D4" filter="url(#fg)">
+  <animateMotion path="673 276 L714 318" dur="2.2s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/>
+</circle><path d="M794 276 L752 318" fill="none" stroke="#E2E8F0" stroke-width="1.3"/><circle r="3" fill="#06B6D4" filter="url(#fg)">
+  <animateMotion path="794 276 L752 318" dur="2.8s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/>
+</circle>
+</g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.62s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 16;0 0" begin="0.62s" dur="0.5s" fill="freeze"/>
+<rect x="889" y="92" width="263" height="328" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="889" y="92" width="263" height="328" rx="14" fill="url(#gl)"/>
+<rect x="903" y="93" width="183" height="1" fill="#0F172A" opacity="0.12"/>
+<text x="905" y="119" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" font-weight="600" fill="#0E7490" letter-spacing="1.5" xml:space="preserve">CI/CD PIPELINE</text>
+<text x="1136" y="119" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#64748B" text-anchor="end" xml:space="preserve">04</text>
+<path d="M905 130 h231" stroke="#E2E8F0" stroke-width="1"/>
+<text x="1020" y="164" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#64748B" text-anchor="middle" xml:space="preserve">$ pipeline run --prod</text><rect x="906" y="208" width="51" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.9" stroke="url(#ag)" stroke-width="1.2">
+  <animate attributeName="opacity" values="1;1;0.25;0.25" keyTimes="0;0.25;0.29;1" dur="4.8s" repeatCount="indefinite"/>
+</rect>
+<text x="932" y="223" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="8.5" fill="#0F172A" text-anchor="middle" xml:space="preserve">COMMIT</text><path d="M958 216 L964 220 L958 224" fill="none" stroke="#475569" stroke-width="1.3"/><rect x="966" y="208" width="51" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.9" stroke="url(#ag)" stroke-width="1.2">
+  <animate attributeName="opacity" values="0.25;0.25;1;1;0.25;0.25" keyTimes="0;0.25;0.29;0.50;0.54;1" dur="4.8s" repeatCount="indefinite"/>
+</rect>
+<text x="991" y="223" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="8.5" fill="#0F172A" text-anchor="middle" xml:space="preserve">BUILD</text><path d="M1018 216 L1022 220 L1018 224" fill="none" stroke="#475569" stroke-width="1.3"/><rect x="1024" y="208" width="51" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.9" stroke="url(#ag)" stroke-width="1.2">
+  <animate attributeName="opacity" values="0.25;0.25;1;1;0.25;0.25" keyTimes="0;0.50;0.54;0.75;0.79;1" dur="4.8s" repeatCount="indefinite"/>
+</rect>
+<text x="1050" y="223" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="8.5" fill="#0F172A" text-anchor="middle" xml:space="preserve">TEST</text><path d="M1076 216 L1082 220 L1076 224" fill="none" stroke="#475569" stroke-width="1.3"/><rect x="1084" y="208" width="51" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.9" stroke="url(#ag)" stroke-width="1.2">
+  <animate attributeName="opacity" values="0.25;0.25;1;1" keyTimes="0;0.75;0.79;1" dur="4.8s" repeatCount="indefinite"/>
+</rect>
+<text x="1109" y="223" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="8.5" fill="#0F172A" text-anchor="middle" xml:space="preserve">DEPLOY</text><path d="M912 246 H1128" stroke="#E2E8F0" stroke-width="1.2"/><circle r="4" fill="url(#ag)" filter="url(#fg)">
+  <animateMotion path="912 246 H1128" dur="4.8s" repeatCount="indefinite"/>
+</circle><text x="910" y="286" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#475569" xml:space="preserve" opacity="0"><animate attributeName="opacity" values="0;1" begin="1.2s" dur="0.4s" fill="freeze"/>&gt; build: passed  (42s)</text><text x="910" y="306" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#475569" xml:space="preserve" opacity="0"><animate attributeName="opacity" values="0;1" begin="1.7s" dur="0.4s" fill="freeze"/>&gt; tests: 218 ok</text><text x="910" y="326" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#047857" xml:space="preserve" opacity="0"><animate attributeName="opacity" values="0;1" begin="2.2s" dur="0.4s" fill="freeze"/>&gt; deploy: success</text>
+</g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.76s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 16;0 0" begin="0.76s" dur="0.5s" fill="freeze"/>
+<rect x="28" y="444" width="263" height="328" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="28" y="444" width="263" height="328" rx="14" fill="url(#gl)"/>
+<rect x="42" y="445" width="183" height="1" fill="#0F172A" opacity="0.12"/>
+<text x="44" y="471" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" font-weight="600" fill="#0E7490" letter-spacing="1.5" xml:space="preserve">MONITORING</text>
+<text x="275" y="471" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#64748B" text-anchor="end" xml:space="preserve">05</text>
+<path d="M44 482 h231" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="54" y="506" width="211" height="150" rx="8" fill="#F1F5F9" fill-opacity="0.55" stroke="#E2E8F0" stroke-width="1"/><path d="M62 544 h195" stroke="#E2E8F0" stroke-width="0.8" opacity="0.7"/><path d="M62 581 h195" stroke="#E2E8F0" stroke-width="0.8" opacity="0.7"/><path d="M62 618 h195" stroke="#E2E8F0" stroke-width="0.8" opacity="0.7"/><path d="M66 604 L88 584 L111 592 L133 564 L156 578 L178 552 L201 569 L223 541 L253 555" fill="none" stroke="url(#ag)" stroke-width="2" stroke-linejoin="round" stroke-dasharray="256" stroke-dashoffset="256" filter="url(#fg)">
+  <animate attributeName="stroke-dashoffset" from="256" to="0" begin="1s" dur="2.6s" fill="freeze"/>
+</path><circle cx="223" cy="541" r="4" fill="#06B6D4" filter="url(#fg)" opacity="0">
+  <animate attributeName="opacity" values="0;0" dur="3.4s" fill="freeze"/>
+  <animate attributeName="opacity" values="1;0.15;1" begin="3.4s" dur="1.4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="223" cy="541" r="4" fill="none" stroke="#06B6D4" opacity="0">
+  <animate attributeName="r" values="4;12" begin="3.4s" dur="1.4s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.8;0" begin="3.4s" dur="1.4s" repeatCount="indefinite"/>
+</circle><text x="54" y="690" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#047857" xml:space="preserve">99.9% uptime</text>
+<text x="265" y="690" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#64748B" text-anchor="end" xml:space="preserve">p95 latency: 84ms</text>
+</g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.90s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 16;0 0" begin="0.90s" dur="0.5s" fill="freeze"/>
+<rect x="315" y="444" width="263" height="328" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="315" y="444" width="263" height="328" rx="14" fill="url(#gl)"/>
+<rect x="329" y="445" width="183" height="1" fill="#0F172A" opacity="0.12"/>
+<text x="331" y="471" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" font-weight="600" fill="#0E7490" letter-spacing="1.5" xml:space="preserve">INFRASTRUCTURE</text>
+<text x="562" y="471" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#64748B" text-anchor="end" xml:space="preserve">06</text>
+<path d="M331 482 h231" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="345" y="506" width="118" height="176" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.3"/><rect x="355" y="518" width="98" height="30" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/><circle cx="367" cy="527" r="2.4" fill="#06B6D4">
+  <animate attributeName="opacity" values="1;0.15;1" dur="0.90s" repeatCount="indefinite"/>
+</circle><circle cx="379" cy="527" r="2.4" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.15;1" dur="1.13s" repeatCount="indefinite"/>
+</circle><circle cx="391" cy="527" r="2.4" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.15;1" dur="1.36s" repeatCount="indefinite"/>
+</circle><path d="M409 538 h34" stroke="#E2E8F0" stroke-width="1"/><path d="M409 542 h34" stroke="#E2E8F0" stroke-width="1"/><rect x="355" y="558" width="98" height="30" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/><circle cx="367" cy="567" r="2.4" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.15;1" dur="1.59s" repeatCount="indefinite"/>
+</circle><circle cx="379" cy="567" r="2.4" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.15;1" dur="1.82s" repeatCount="indefinite"/>
+</circle><circle cx="391" cy="567" r="2.4" fill="#06B6D4">
+  <animate attributeName="opacity" values="1;0.15;1" dur="2.05s" repeatCount="indefinite"/>
+</circle><path d="M409 578 h34" stroke="#E2E8F0" stroke-width="1"/><path d="M409 582 h34" stroke="#E2E8F0" stroke-width="1"/><rect x="355" y="598" width="98" height="30" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/><circle cx="367" cy="607" r="2.4" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.15;1" dur="2.28s" repeatCount="indefinite"/>
+</circle><circle cx="379" cy="607" r="2.4" fill="#06B6D4">
+  <animate attributeName="opacity" values="1;0.15;1" dur="2.51s" repeatCount="indefinite"/>
+</circle><circle cx="391" cy="607" r="2.4" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.15;1" dur="2.74s" repeatCount="indefinite"/>
+</circle><path d="M409 618 h34" stroke="#E2E8F0" stroke-width="1"/><path d="M409 622 h34" stroke="#E2E8F0" stroke-width="1"/><rect x="355" y="638" width="98" height="30" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/><circle cx="367" cy="647" r="2.4" fill="#06B6D4">
+  <animate attributeName="opacity" values="1;0.15;1" dur="2.97s" repeatCount="indefinite"/>
+</circle><circle cx="379" cy="647" r="2.4" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.15;1" dur="3.20s" repeatCount="indefinite"/>
+</circle><circle cx="391" cy="647" r="2.4" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.15;1" dur="3.43s" repeatCount="indefinite"/>
+</circle><path d="M409 658 h34" stroke="#E2E8F0" stroke-width="1"/><path d="M409 662 h34" stroke="#E2E8F0" stroke-width="1"/><text x="404" y="702" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#475569" text-anchor="middle" xml:space="preserve">RACK-01</text><rect x="487" y="560" width="62" height="68" rx="6" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.3"/><rect x="495" y="570" width="46" height="14" rx="3" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/><circle cx="535" cy="577" r="2" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.2;1" dur="1.3s" repeatCount="indefinite"/>
+</circle><rect x="495" y="592" width="46" height="14" rx="3" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/><circle cx="535" cy="599" r="2" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.2;1" dur="2.0s" repeatCount="indefinite"/>
+</circle><text x="518" y="646" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#475569" text-anchor="middle" xml:space="preserve">NAS</text><path d="M463 594 H487" fill="none" stroke="#475569" stroke-width="1.4" stroke-dasharray="5 5"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.8s" repeatCount="indefinite"/></path>
+</g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="1.04s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 16;0 0" begin="1.04s" dur="0.5s" fill="freeze"/>
+<rect x="602" y="444" width="263" height="328" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="602" y="444" width="263" height="328" rx="14" fill="url(#gl)"/>
+<rect x="616" y="445" width="183" height="1" fill="#0F172A" opacity="0.12"/>
+<text x="618" y="471" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" font-weight="600" fill="#0E7490" letter-spacing="1.5" xml:space="preserve">NETWORKING</text>
+<text x="849" y="471" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#64748B" text-anchor="end" xml:space="preserve">07</text>
+<path d="M618 482 h231" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="678" y="500" width="112" height="34" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="734" y="520" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#0E7490" text-anchor="middle" xml:space="preserve">FIREWALL</text><path d="M678 509 h112" stroke="#E2E8F0" stroke-width="0.9" opacity="0.9"/><path d="M678 517 h112" stroke="#E2E8F0" stroke-width="0.9" opacity="0.9"/><path d="M678 525 h112" stroke="#E2E8F0" stroke-width="0.9" opacity="0.9"/><rect x="678" y="500" width="112" height="34" rx="8" fill="none" stroke="url(#ag)" stroke-width="1.2" opacity="0.7"/><text x="734" y="521" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#0E7490" text-anchor="middle" xml:space="preserve">FIREWALL</text><rect x="672" y="578" width="124" height="30" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="734" y="596" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#475569" text-anchor="middle" xml:space="preserve">L3 SWITCH</text><rect x="624" y="662" width="64" height="38" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="656" y="684" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="8.5" fill="#047857" text-anchor="middle" xml:space="preserve">VLAN 10</text><rect x="702" y="662" width="64" height="38" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="734" y="684" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="8.5" fill="#047857" text-anchor="middle" xml:space="preserve">VLAN 20</text><rect x="780" y="662" width="64" height="38" rx="8" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1.2"/><text x="812" y="684" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="8.5" fill="#047857" text-anchor="middle" xml:space="preserve">VLAN 30</text><path d="M734 534 V576" fill="none" stroke="#E2E8F0" stroke-width="1.3"/><circle r="2.6" fill="#06B6D4" filter="url(#fg)">
+  <animateMotion path="734 534 V576" dur="1.6s" begin="0.00s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.15;1;0.15" dur="1.6s" begin="0.00s" repeatCount="indefinite"/>
+</circle><path d="M734 608 C734 636 656 632 656 660" fill="none" stroke="#E2E8F0" stroke-width="1.3"/><circle r="2.6" fill="#06B6D4" filter="url(#fg)">
+  <animateMotion path="734 608 C734 636 656 632 656 660" dur="2.0s" begin="0.35s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.15;1;0.15" dur="2.0s" begin="0.35s" repeatCount="indefinite"/>
+</circle><path d="M734 608 C734 636 734 632 734 660" fill="none" stroke="#E2E8F0" stroke-width="1.3"/><circle r="2.6" fill="#06B6D4" filter="url(#fg)">
+  <animateMotion path="734 608 C734 636 734 632 734 660" dur="2.4s" begin="0.70s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.15;1;0.15" dur="2.4s" begin="0.70s" repeatCount="indefinite"/>
+</circle><path d="M734 608 C734 636 812 632 812 660" fill="none" stroke="#E2E8F0" stroke-width="1.3"/><circle r="2.6" fill="#06B6D4" filter="url(#fg)">
+  <animateMotion path="734 608 C734 636 812 632 812 660" dur="2.8s" begin="1.05s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.15;1;0.15" dur="2.8s" begin="1.05s" repeatCount="indefinite"/>
+</circle>
+</g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="1.18s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 16;0 0" begin="1.18s" dur="0.5s" fill="freeze"/>
+<rect x="889" y="444" width="263" height="328" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="889" y="444" width="263" height="328" rx="14" fill="url(#gl)"/>
+<rect x="903" y="445" width="183" height="1" fill="#0F172A" opacity="0.12"/>
+<text x="905" y="471" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" font-weight="600" fill="#0E7490" letter-spacing="1.5" xml:space="preserve">SECURITY</text>
+<text x="1136" y="471" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#64748B" text-anchor="end" xml:space="preserve">08</text>
+<path d="M905 482 h231" stroke="#E2E8F0" stroke-width="1"/>
+<path d="M1020 508 L1082 532 V578 C1082 616 1050 632 1020 640 C990 632 958 616 958 578 V532 Z" fill="#F1F5F9" fill-opacity="0.6" stroke="url(#ag)" stroke-width="2" filter="url(#fg)">
+  <animate attributeName="stroke-width" values="1.6;2.6;1.6" dur="3.6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.75;1;0.75" dur="3.6s" repeatCount="indefinite"/>
+</path><g stroke="#0F172A" stroke-width="2" fill="none">
+<path d="M1012 574 v-8 a9 9 0 0 1 18 0 v8"/>
+<rect x="1006" y="574" width="28" height="22" rx="4" fill="#F8FAFC"/>
+</g>
+<circle cx="1020" cy="584" r="3" fill="#06B6D4">
+  <animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/>
+</circle><clipPath id="shc"><path d="M1020 508 L1082 532 V578 C1082 616 1050 632 1020 640 C990 632 958 616 958 578 V532 Z"/></clipPath>
+<g clip-path="url(#shc)"><rect x="958" y="500" width="124" height="7" fill="#06B6D4" opacity="0.35">
+  <animateTransform attributeName="transform" type="translate" values="0 0;0 146;0 0" dur="4.2s" repeatCount="indefinite"/>
+</rect></g><text x="1020" y="674" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#64748B" text-anchor="middle" xml:space="preserve">zero trust | least privilege</text>
+<text x="1020" y="692" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9.5" fill="#047857" text-anchor="middle" xml:space="preserve">threats blocked: 100%</text>
+</g>
+</svg>

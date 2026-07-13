@@ -3,8 +3,16 @@
 
 GitHub-README-safe: SMIL animations only, no <script>/<style>/foreignObject,
 no external refs, system font stacks only.
+
+v12: the avatar is a real photo-derived ASCII portrait (see photo_to_ascii.py,
+which writes ascii_face.py from the portfolio photo) and the background gains
+a neural-network constellation layer.
 """
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ascii_face import ASCII_FACE  # noqa: E402
 
 W, H = 1180, 610
 
@@ -59,27 +67,9 @@ def esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-# ---------------------------------------------------------------- ASCII avatar
-ASCII_ART = [
-    "            .:-=======-:.            ",
-    "        .=*%@@@@@@@@@@@@%*=.         ",
-    "      -#@@@@@@@@@@@@@@@@@@@@#-       ",
-    "    .*@@@@@@@@@@@@@@@@@@@@@@@@*.     ",
-    "   .#@@@@@%#*+==-::-==+*#%@@@@@#.    ",
-    "   *@@@@%=.            .=%@@@@*      ",
-    "  -@@@@#.    .::    ::.    .#@@@@-   ",
-    "  #@@@%    -%@@%.  .%@@%-    %@@@#   ",
-    "  @@@@+    +@@@@.  .@@@@+    +@@@@   ",
-    "  @@@@+     -==:    :==-     +@@@@   ",
-    "  #@@@%.                    .%@@@#   ",
-    "  -@@@@*       .-==-.       *@@@@-   ",
-    "   *@@@@#-    +%@@@@%+    -#@@@@*    ",
-    "   .#@@@@@%*=:.      .:=*%@@@@@#.    ",
-    "     *@@@@@@@@@%####%@@@@@@@@@*      ",
-    "      -#@@@@@@@@@@@@@@@@@@@@#-       ",
-    "        .=*%@@@@@@@@@@@@%*=.         ",
-    "            .:-=======-:.            ",
-]
+# ------------------------------------------------- ASCII avatar (real photo)
+# Generated from the portfolio portrait by photo_to_ascii.py; imported above.
+ASCII_ART = ASCII_FACE
 
 TERMINAL_TAIL = [
     ("root@aadityapa:~$ whoami", "sub"),
@@ -181,6 +171,10 @@ def defs(t):
   <feGaussianBlur stdDeviation="3.2" result="b"/>
   <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
 </filter>
+<filter id="fga" x="-40%" y="-40%" width="180%" height="180%">
+  <feGaussianBlur stdDeviation="1.4" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
 <filter id="fs" x="-60%" y="-60%" width="220%" height="220%">
   <feGaussianBlur stdDeviation="9"/>
 </filter>
@@ -223,6 +217,27 @@ def background(t):
   <animate attributeName="opacity" values="0.06;0.16;0.06" dur="8s" repeatCount="indefinite"/>
 </circle>
 </g>''')
+    # Neural-network constellation: thin edges with drifting dash flow between
+    # pulsing nodes, adding depth behind the glass panels
+    nn_nodes = [(70, 80), (210, 40), (390, 95), (585, 35), (770, 75), (960, 45),
+                (1120, 100), (60, 300), (1130, 290), (95, 545), (330, 585),
+                (620, 570), (890, 580), (1105, 540)]
+    nn_edges = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (0, 7), (6, 8),
+                (7, 9), (9, 10), (10, 11), (11, 12), (12, 13), (8, 13), (2, 7), (4, 8)]
+    nn = [f'<g clip-path="url(#cv)" stroke="{t["particle"]}" fill="{t["particle"]}" opacity="{0.16 if t["desc"] == "dark" else 0.12}">']
+    for k, (i, j) in enumerate(nn_edges):
+        (x1, y1), (x2, y2) = nn_nodes[i], nn_nodes[j]
+        nn.append(f'''<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke-width="0.8" stroke-dasharray="5 9">
+<animate attributeName="stroke-dashoffset" values="0;-56" dur="{7 + (k % 5)}s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.4;1;0.4" dur="{5 + (k % 4)}s" begin="{k * 0.4:.1f}s" repeatCount="indefinite"/>
+</line>''')
+    for k, (nx, ny) in enumerate(nn_nodes):
+        nn.append(f'''<circle cx="{nx}" cy="{ny}" r="2.2" stroke="none">
+<animate attributeName="r" values="1.6;3;1.6" dur="{4 + (k % 3)}s" begin="{k * 0.3:.1f}s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.5;1;0.5" dur="{4 + (k % 3)}s" begin="{k * 0.3:.1f}s" repeatCount="indefinite"/>
+</circle>''')
+    nn.append("</g>")
+    p.append("".join(nn))
     # Noise texture
     p.append(f'<rect x="0" y="0" width="{W}" height="{H}" rx="24" filter="url(#nz)" opacity="{t["noise_op"]}"/>')
     # Floating particles
@@ -261,7 +276,7 @@ def left_panel(t):
 <rect x="{x}" y="{y}" width="{w}" height="{h}" rx="20" fill="url(#gl)"/>
 <rect x="{x+18}" y="{y+1}" width="{w-120}" height="1" fill="{t['glassline']}" opacity="0.12"/>''')
     # Pulsing light behind ASCII
-    p.append(f'''<circle cx="{x+w/2}" cy="{y+220}" r="150" fill="url(#b2)" opacity="0.25">
+    p.append(f'''<circle cx="{x+w/2}" cy="{y+245}" r="150" fill="url(#b2)" opacity="0.25">
   <animate attributeName="opacity" values="0.15;0.4;0.15" dur="5s" repeatCount="indefinite"/>
   <animate attributeName="r" values="140;165;140" dur="7s" repeatCount="indefinite"/>
 </circle>''')
@@ -270,25 +285,32 @@ def left_panel(t):
 <circle cx="{x+w-30}" cy="{y+30}" r="4" fill="{t['a3']}">
   <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
 </circle>''')
-    # ASCII art with staggered reveal + gradient sweep via mask + floating
+    # ASCII portrait (photo-derived) with staggered reveal + gradient sweep via
+    # mask + floating drift + breathing scale
     rows = []
     art_x = x + w / 2
-    art_y0 = y + 72
-    lh = 15
+    art_y0 = y + 64
+    lh = 13
+    afs = "10.5"
     for i, line in enumerate(ASCII_ART):
-        begin = 0.4 + i * 0.14
-        rows.append(f'''<text x="{art_x:.0f}" y="{art_y0 + i*lh}" font-family="{MONO}" font-size="11" text-anchor="middle" xml:space="preserve" fill="{t['a2']}" opacity="0"><animate attributeName="opacity" values="0;1" begin="{begin:.2f}s" dur="0.35s" fill="freeze"/>{esc(line)}</text>''')
+        begin = 0.35 + i * 0.11
+        rows.append(f'''<text x="{art_x:.0f}" y="{art_y0 + i*lh}" font-family="{MONO}" font-size="{afs}" text-anchor="middle" xml:space="preserve" fill="{t['a2']}" opacity="0"><animate attributeName="opacity" values="0;1" begin="{begin:.2f}s" dur="0.35s" fill="freeze"/>{esc(line)}</text>''')
     mask_rows = []
     for i, line in enumerate(ASCII_ART):
-        mask_rows.append(f'<text x="{art_x:.0f}" y="{art_y0 + i*lh}" font-family="{MONO}" font-size="11" text-anchor="middle" xml:space="preserve" fill="#FFFFFF">{esc(line)}</text>')
+        mask_rows.append(f'<text x="{art_x:.0f}" y="{art_y0 + i*lh}" font-family="{MONO}" font-size="{afs}" text-anchor="middle" xml:space="preserve" fill="#FFFFFF">{esc(line)}</text>')
     art_h = len(ASCII_ART) * lh
-    p.append(f'''<g filter="url(#fg)" opacity="{t['glow_op']}">
+    bcx, bcy = art_x, art_y0 + art_h / 2
+    p.append(f'''<g filter="url(#fga)" opacity="{t['glow_op']}">
 <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0;0 4;0 0" dur="9s" repeatCount="indefinite"/>
+<g transform="translate({bcx:.0f} {bcy:.0f})"><g>
+<animateTransform attributeName="transform" type="scale" values="1;1.012;1" dur="7s" repeatCount="indefinite"/>
+<g transform="translate(-{bcx:.0f} -{bcy:.0f})">
 {''.join(rows)}
 <mask id="am">{''.join(mask_rows)}</mask>
-<g mask="url(#am)" opacity="0"><animate attributeName="opacity" values="0;0.9" begin="3.2s" dur="0.8s" fill="freeze"/>
+<g mask="url(#am)" opacity="0"><animate attributeName="opacity" values="0;0.9" begin="3.3s" dur="0.8s" fill="freeze"/>
   <rect x="{x}" y="{art_y0-14}" width="{w}" height="{art_h+10}" fill="url(#sw)"/>
 </g>
+</g></g></g>
 </g>''')
     # CRT scanlines over avatar zone
     p.append(f'<rect x="{x+12}" y="{art_y0-20}" width="{w-24}" height="{art_h+16}" fill="url(#crt)" rx="10"/>')
@@ -462,8 +484,9 @@ def socials(t, x, y):
 def build(theme_key):
     t = THEMES[theme_key]
     title = "Aaditya Padiya — System Administrator, Cloud &amp; AI Infrastructure Engineer"
-    desc = (f"Animated {t['desc']}-theme profile banner for Aaditya Padiya: an ASCII-art avatar inside a "
-            "glass terminal, with typing name animation, rotating role titles, profile details "
+    desc = (f"Animated {t['desc']}-theme profile banner for Aaditya Padiya: an ASCII portrait generated "
+            "from his real photo inside a glass terminal, a neural-network constellation background, "
+            "typing name animation, rotating role titles, profile details "
             "(Pune India, BCA IT, 3+ years experience, CludoBits IT Solutions), animated skill pills "
             "and social links for GitHub, LinkedIn, portfolio and email.")
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t d">

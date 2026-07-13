@@ -1,0 +1,267 @@
+{
+  "$schema_note": "Canonical structured profile for the aadityapa GitHub profile repository (v12). Sources: Aaditya_Padiya_CV.pdf (primary), Profile.pdf (LinkedIn export), CV old.pdf, live GitHub API (api.github.com/users/aadityapa). The root-level profile.json is a synchronized copy of the identity/experience/projects subset kept for backwards compatibility; this file is the source of truth.",
+  "identity": {
+    "fullName": "Aaditya Padiya",
+    "githubUsername": "aadityapa",
+    "githubId": 84699324,
+    "currentPosition": "System Administrator",
+    "professionalTitle": "System Administrator | IT Infrastructure & Cloud (AWS) | Networking | DevOps | AI Infrastructure",
+    "yearsOfExperience": "3+",
+    "location": "Pune, Maharashtra, India",
+    "dateOfBirth": "2002-04-22",
+    "languages": [
+      { "language": "English", "level": "Upper Intermediate (B2)" },
+      { "language": "Hindi", "level": "Bilingual / Proficient (C2)" },
+      { "language": "Marathi", "level": "Bilingual / Proficient (C2)" }
+    ]
+  },
+  "summary": "System Administrator with 3+ years of experience managing enterprise IT infrastructure, Windows Server, Active Directory, Microsoft Intune, and production systems. Skilled in AWS (EC2, S3, IAM, VPC, CloudWatch), Linux/Ubuntu administration, shell scripting, networking (DNS/DHCP/VLAN/Firewall/VPN), NAS configuration, endpoint security, and backup & disaster recovery. Experienced in AI/LLM model deployment, AI infrastructure setup, system & server building, and DevOps tooling (Docker, CI/CD, GitHub Actions). Proven track record of optimizing uptime, reducing incidents, and delivering scalable IT solutions.",
+  "contact": {
+    "email": "aadityapadiya@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/aaditya-padiya-7b64372",
+    "portfolio": "https://aadityapadiya.vercel.app",
+    "github": "https://github.com/aadityapa"
+  },
+  "currentFocus": [
+    "AI-native reliability automation — self-healing cloud platforms with real-time incident detection and AI-assisted RCA",
+    "Blockchain-verified document intelligence — on-chain SHA-256 fingerprint verification for compliance workflows",
+    "Infrastructure as discipline — NAS, backup & disaster recovery, patch management, system hardening, endpoint security"
+  ],
+  "experience": [
+    {
+      "role": "System Administrator",
+      "company": "CludoBits IT Solutions Pvt. Ltd.",
+      "location": "Pune, India",
+      "start": "2025-11",
+      "end": null,
+      "period": "Nov 2025 - Present",
+      "current": true,
+      "highlights": [
+        "Managed 50+ endpoints, servers, and enterprise network infrastructure maintaining 99.9% uptime across all production systems",
+        "Monitored Linux (Ubuntu) and Windows Server environments; performed patch management and system hardening",
+        "Reduced average incident resolution time by 30% through structured root cause analysis (RCA)",
+        "Implemented CI/CD pipelines and GitHub Actions workflows for production systems",
+        "Configured and managed NAS solutions for centralized, secure organizational data storage",
+        "Built and assembled custom workstation systems and servers for project-specific hardware requirements",
+        "Deployed and maintained AI models and LLM integrations (Ollama, OpenAI API) for internal business applications",
+        "Performed AI model fine-tuning and optimization for task-specific production deployments",
+        "Managed Docker containers for application isolation, deployment consistency, and environment reproducibility",
+        "Administered user access, IAM policies, and endpoint security across all systems"
+      ]
+    },
+    {
+      "role": "Director & Chief Technology Officer",
+      "company": "Nexovo Tech Services Private Limited",
+      "location": "Pune, India",
+      "start": "2026-03",
+      "end": null,
+      "period": "Mar 2026 - Present",
+      "current": true,
+      "concurrent": true,
+      "sourceNote": "LinkedIn profile export (Profile.pdf); concurrent with CludoBits role. Nexovo is also the association listed on the TrustOCR AI, Self-Healing Cloud Platform and Ritika Infotech projects in the primary CV.",
+      "highlights": [
+        "Lead end-to-end IT solutions: cloud deployment, infrastructure setup, website and application development, IT consulting",
+        "Managed IT infrastructure ensuring high availability and system performance",
+        "Deployed live production websites and applications, including SEO-optimized platforms ranking on Google search"
+      ]
+    },
+    {
+      "role": "Information Technology Engineer (L2/L3)",
+      "company": "Godrej Properties Limited",
+      "location": "Pune, India",
+      "start": "2025-01",
+      "end": "2025-10",
+      "period": "Jan 2025 - Oct 2025",
+      "current": false,
+      "highlights": [
+        "Provided L2/L3 IT support across enterprise infrastructure for 350+ users with SLA compliance",
+        "Designed and deployed corporate network: SonicWALL TZ540 firewall with dual ISP failover, D-Link L3 switches with 9 VLANs, HP Gen10 DMZ server for 350 systems",
+        "Monitored Windows Server, Active Directory, DNS/DHCP, and user account management",
+        "Configured and enforced MDM policies with Microsoft Intune; administered VPN and firewall rules",
+        "Managed IT assets, software licensing, and security compliance"
+      ]
+    },
+    {
+      "role": "IT Manager / Desktop Support Engineer (L2)",
+      "company": "Mediprobe Consultancy Services Pvt. Ltd.",
+      "location": "Pune, India",
+      "start": "2024-01",
+      "end": "2025-01",
+      "period": "Jan 2024 - Jan 2025",
+      "current": false,
+      "highlights": [
+        "Managed IT infrastructure ensuring 99%+ uptime and regulatory compliance",
+        "Configured Windows OS (10/11), Windows Server, DNS/DHCP, Active Directory, ACL, backup & disaster recovery",
+        "Reduced incident resolution times by 40% via streamlined support processes and monitoring tools",
+        "Led cross-functional IT teams; managed workstation setups, OS deployments, system upgrades",
+        "Implemented endpoint security policies, VPN access controls, and network security best practices"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Computer Applications (BCA) - Information Technology",
+      "institution": "Shri Shivaji Science College, Amravati, India",
+      "start": "2020-09",
+      "end": "2023-06",
+      "period": "Sep 2020 - Jun 2023"
+    },
+    {
+      "degree": "H.S.C. - Computer Science",
+      "institution": "S.R. Patil Jr. College of Science, Akola, India",
+      "period": "2018 - 2020"
+    },
+    {
+      "degree": "S.S.C. - Science",
+      "institution": "Swami Vivekanand Dhyanpheth, Telhara",
+      "period": "2017 - 2018"
+    }
+  ],
+  "certifications": [
+    { "name": "Responsive Web Design", "date": null, "credential": null },
+    { "name": "Machine Learning with Python", "date": null, "credential": null },
+    { "name": "MS-CIT", "date": "2016-09", "credential": null },
+    { "name": "CCC", "date": "2018-08", "credential": null }
+  ],
+  "skills": {
+    "operatingSystems": ["Windows 10/11", "Windows Server 2016/2019/2022", "Ubuntu", "Linux (Debian/RHEL)"],
+    "cloud": ["AWS (EC2, S3, IAM, VPC, Route53, CloudWatch)", "Vercel", "Render"],
+    "networking": ["DNS", "DHCP", "IP Addressing & Subnetting", "VLAN", "VPN", "Firewall (SonicWALL)", "LAN/WAN", "LACP", "Network Security", "Routing & Switching"],
+    "aiMl": ["AI Model Development", "LLM Integration (Ollama, OpenAI API)", "AI Model Fine-Tuning", "Python (ML/AI)", "AIOps"],
+    "storageHardware": ["NAS Configuration & Management", "System Building", "Server Building & Assembly", "HP Gen10 Server"],
+    "virtualizationContainers": ["Docker", "VMware", "Hyper-V", "VDI Server", "Virtual Machines"],
+    "devops": ["CI/CD", "GitHub Actions", "Shell Scripting", "PowerShell"],
+    "securityCompliance": ["Active Directory", "Microsoft Intune", "MDM", "Endpoint Security", "ACL", "Patch Management", "System Hardening", "Disaster Recovery", "Business Continuity"],
+    "monitoringItsm": ["Infrastructure Monitoring", "Incident Management", "Root Cause Analysis", "Site Reliability Engineering", "Technical Documentation"],
+    "development": ["Next.js", "React", "Python", "FastAPI", "Streamlit", "Solidity", "HTML/CSS/JavaScript", "SEO Optimization"],
+    "tools": ["MS Office 365", "Git", "GitHub", "CCTV Monitoring", "Logical Volume Management (LVM)"]
+  },
+  "projects": [
+    {
+      "name": "Nexovo Self-Healing Cloud Platform",
+      "description": "AI-native AIOps platform: real-time incident detection, AI-assisted RCA, escalation workflows, audit timelines, Slack/Jira/HTTPS webhooks; measurable MTTR reduction.",
+      "stack": ["Python", "Streamlit", "FastAPI", "Render", "SRE"],
+      "category": "AIOps / SRE",
+      "status": "Production",
+      "repo": "https://github.com/aadityapa/Self-Healing-Cloud-Platform",
+      "repoVerified": true,
+      "association": "Nexovo Tech Services Private Limited"
+    },
+    {
+      "name": "TrustOCR AI",
+      "description": "Blockchain-verified document intelligence: browser OCR, AI structuring (Ollama/OpenAI), EVM on-chain SHA-256 fingerprint registry, 3D pipeline visualization.",
+      "stack": ["Next.js", "React", "Solidity", "Hardhat", "Ollama"],
+      "category": "AI / Blockchain",
+      "status": "Live",
+      "repo": "https://github.com/aadityapa/ocr",
+      "repoVerified": true,
+      "demo": "https://ocr-chi-ivory.vercel.app",
+      "period": "Mar 2026 - Apr 2026",
+      "association": "Nexovo Tech Services Private Limited"
+    },
+    {
+      "name": "Corporate Network Infrastructure",
+      "description": "Enterprise network design for 350 users: SonicWALL TZ540 dual-ISP failover, D-Link L3 switches (9 VLANs, LACP), HP Gen10 DMZ server.",
+      "stack": ["SonicWALL", "L3 Switching", "VLAN", "Firewall"],
+      "category": "Networking",
+      "status": "Deployed",
+      "repo": "https://github.com/aadityapa/corporate-network-infrastructure",
+      "repoVerified": true,
+      "period": "Sep 2025 - Oct 2025",
+      "association": "Godrej Properties Limited"
+    },
+    {
+      "name": "HealthEcosystem — Enterprise Healthcare Platform",
+      "description": "Multi-tenant healthcare SaaS: LIMS, EHR, PMS, billing, PACS/RIS, ABDM, AI and compliance. NestJS CQRS microservices, Next.js 15, PostgreSQL, EKS.",
+      "stack": ["TypeScript", "NestJS", "Next.js", "PostgreSQL", "EKS"],
+      "category": "Enterprise SaaS",
+      "status": "In development",
+      "repo": "https://github.com/aadityapa/HealthEcosystem-Enterprise-Healthcare-Platform",
+      "repoVerified": true
+    },
+    {
+      "name": "EduAI",
+      "description": "Multi-tenant SaaS platform for AI-powered education (Classes 1-10, CBSE/ICSE/State Boards) built as a Turborepo monorepo.",
+      "stack": ["TypeScript", "Turborepo", "Next.js", "AI"],
+      "category": "AI / EdTech",
+      "status": "In development",
+      "repo": "https://github.com/aadityapa/EduAI",
+      "repoVerified": true
+    },
+    {
+      "name": "Real Estate ERP Platform",
+      "description": "Enterprise-grade multi-tenant SaaS for Indian real estate developers.",
+      "stack": ["TypeScript", "Next.js", "PostgreSQL"],
+      "category": "Enterprise SaaS",
+      "status": "In development",
+      "repo": "https://github.com/aadityapa/Real-Estate-ERP-Platform",
+      "repoVerified": true
+    },
+    {
+      "name": "Nexovo Cafe System",
+      "description": "Multi-app cafe platform: ordering, POS/KDS, inventory, CRM & loyalty, GST billing, WhatsApp/AI-voice/kiosk channels, multi-branch ready.",
+      "stack": ["TypeScript", "Next.js", "Node"],
+      "category": "Enterprise SaaS",
+      "status": "In development",
+      "repo": "https://github.com/aadityapa/Nexovo-Cafe-System",
+      "repoVerified": true
+    },
+    {
+      "name": "AI Interview Model",
+      "description": "AI-powered interview platform (Python backend + TypeScript frontend, deployed on Vercel).",
+      "stack": ["Python", "TypeScript", "AI"],
+      "category": "AI",
+      "status": "Live",
+      "repo": "https://github.com/aadityapa/AI-Interview-Model-Backend-v2",
+      "repoVerified": true,
+      "demo": "https://ai-interview-model-frontend-v2.vercel.app"
+    },
+    {
+      "name": "Ritika Infotech",
+      "description": "SEO-optimized business website ranking on Google; full domain, hosting, and production management.",
+      "stack": ["HTML", "CSS", "JavaScript", "SEO"],
+      "category": "Web",
+      "status": "Live",
+      "repo": null,
+      "repoVerified": false,
+      "repoNote": "CV references github.com/aadityapa/ritikainfotech but no such public repo exists (verified 2026-07-13); linking live site only.",
+      "demo": "https://ritikainfotech.in",
+      "association": "Nexovo Tech Services Private Limited"
+    },
+    {
+      "name": "Portfolio",
+      "description": "Personal portfolio website at aadityapadiya.vercel.app.",
+      "stack": ["TypeScript", "Next.js"],
+      "category": "Web",
+      "status": "Live",
+      "repo": "https://github.com/aadityapa/Portfolio",
+      "repoVerified": true,
+      "demo": "https://aadityapadiya.vercel.app"
+    }
+  ],
+  "githubReposVerified": {
+    "checkedAt": "2026-07-13",
+    "publicRepoCount": 17,
+    "repos": [
+      "aadityapa", "AI-Interview-Model-Backend-v2", "AI-Interview-Model-Frontend-v2",
+      "corporate-network-infrastructure", "dr", "EduAI", "EventManagment",
+      "HealthEcosystem-Enterprise-Healthcare-Platform", "home-website", "madhubanfrontend",
+      "Nexovo-Cafe-System", "nexovo-HMS", "ocr", "Portfolio",
+      "Real-Estate-ERP-Platform", "Self-Healing-Cloud-Platform", "survey-form"
+    ]
+  },
+  "achievements": [
+    "Maintained 99.9% uptime across all production systems at CludoBits",
+    "Designed enterprise network for 350 users (dual-ISP failover, 9 VLANs)",
+    "Reduced incident resolution time by 30% (CludoBits) and 40% (Mediprobe)",
+    "Deployed fine-tuned LLM integrations to production for internal business applications",
+    "Shipped SEO-optimized website ranking on Google"
+  ],
+  "keywords": [
+    "System Administrator", "IT Infrastructure", "AWS", "Cloud", "Networking",
+    "DevOps", "AI Infrastructure", "Windows Server", "Active Directory",
+    "Microsoft Intune", "Linux", "Ubuntu", "Docker", "CI/CD", "GitHub Actions",
+    "NAS", "Endpoint Security", "Disaster Recovery", "Ollama", "OpenAI API",
+    "AIOps", "SRE", "VLAN", "Firewall", "SonicWALL", "Pune"
+  ]
+}

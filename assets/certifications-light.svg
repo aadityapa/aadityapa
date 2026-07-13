@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 360" width="1180" height="360" role="img" aria-labelledby="t d">
+<title id="t">Aaditya Padiya — Certifications</title>
+<desc id="d">Animated light-theme certification badges for Aaditya Padiya: Responsive Web Design (freeCodeCamp), Machine Learning with Python (freeCodeCamp), MS-CIT (MKCL, 2016) and CCC (NIELIT, 2018), each shown as a verified glass badge with an animated medallion.</desc>
+<defs>
+<linearGradient id="ag" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#2563EB"/><stop offset="0.5" stop-color="#06B6D4"/><stop offset="1" stop-color="#10B981"/>
+</linearGradient>
+<linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#2563EB"/><stop offset="0.5" stop-color="#06B6D4"/><stop offset="1" stop-color="#10B981"/>
+  <animateTransform attributeName="gradientTransform" type="rotate" values="0 0.5 0.5;360 0.5 0.5" dur="10s" repeatCount="indefinite"/>
+</linearGradient>
+<linearGradient id="bs" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1180" y2="360">
+  <stop offset="0" stop-color="#2563EB"/><stop offset="0.25" stop-color="#06B6D4"/>
+  <stop offset="0.5" stop-color="#10B981"/><stop offset="0.75" stop-color="#06B6D4"/>
+  <stop offset="1" stop-color="#2563EB"/>
+  <animateTransform attributeName="gradientTransform" type="rotate" from="0 590 180" to="360 590 180" dur="14s" repeatCount="indefinite"/>
+</linearGradient>
+<linearGradient id="sh" x1="0" y1="0" x2="1" y2="0.35">
+  <stop offset="0" stop-color="#0F172A" stop-opacity="0"/>
+  <stop offset="0.5" stop-color="#0F172A" stop-opacity="0.05"/>
+  <stop offset="1" stop-color="#0F172A" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="b1" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#2563EB" stop-opacity="0.8"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="b2" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#06B6D4" stop-opacity="0.7"/><stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0F172A" stop-opacity="0.10"/>
+  <stop offset="0.18" stop-color="#0F172A" stop-opacity="0.03"/>
+  <stop offset="1" stop-color="#0F172A" stop-opacity="0"/>
+</linearGradient>
+<filter id="fb" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="46"/>
+</filter>
+<filter id="fg" x="-80%" y="-80%" width="260%" height="260%">
+  <feGaussianBlur stdDeviation="3.2" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fs" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="9"/>
+</filter>
+<clipPath id="cv"><rect x="0" y="0" width="1180" height="360" rx="24"/></clipPath><clipPath id="cc1"><rect x="30" y="82" width="262" height="250" rx="14"/></clipPath><clipPath id="cc2"><rect x="316" y="82" width="262" height="250" rx="14"/></clipPath><clipPath id="cc3"><rect x="602" y="82" width="262" height="250" rx="14"/></clipPath><clipPath id="cc4"><rect x="888" y="82" width="262" height="250" rx="14"/></clipPath></defs>
+<rect x="0" y="0" width="1180" height="360" rx="24" fill="#FFFFFF"/><g clip-path="url(#cv)" opacity="0.22">
+<circle cx="200" cy="90" r="200" fill="url(#b1)" filter="url(#fb)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;110 60;30 -30;0 0" dur="27s" repeatCount="indefinite"/>
+</circle>
+<circle cx="980" cy="300" r="220" fill="url(#b2)" filter="url(#fb)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;-130 -70;-30 40;0 0" dur="31s" repeatCount="indefinite"/>
+</circle>
+</g><rect x="0" y="0" width="1180" height="360" rx="24" fill="url(#gl)" clip-path="url(#cv)"/><rect x="1.5" y="1.5" width="1177" height="357" rx="22.5" fill="none" stroke="url(#bs)" stroke-width="1.6" opacity="0.9"/><rect x="1.5" y="1.5" width="1177" height="357" rx="22.5" fill="none" stroke="url(#bs)" stroke-width="3" opacity="0.22" filter="url(#fs)"/>
+<text x="30" y="46" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="#0F172A">Certifications</text>
+<text x="30" y="65" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="11" fill="#64748B" xml:space="preserve">$ credentials --verified</text>
+<text x="1150" y="46" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#0E7490" text-anchor="end" xml:space="preserve">4 credentials</text>
+<g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.25s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" values="0.94;1" begin="0.25s" dur="0.5s" fill="freeze" additive="sum"/>
+<animateTransform attributeName="transform" type="translate" values="9.7 12.4;0 0" begin="0.25s" dur="0.5s" fill="freeze" additive="sum"/>
+<rect x="30" y="82" width="262" height="250" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="30" y="82" width="262" height="250" rx="14" fill="url(#gl)"/>
+<rect x="44" y="83" width="182" height="1" fill="#0F172A" opacity="0.12"/><circle cx="161" cy="144" r="33" fill="none" stroke="url(#mg)" stroke-width="2.6" filter="url(#fg)" opacity="0.5"/>
+<circle cx="161" cy="144" r="33" fill="none" stroke="url(#mg)" stroke-width="2.6"/>
+<circle cx="161" cy="144" r="26" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1"/>
+<text x="161" y="149" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="15" font-weight="700" fill="#0E7490" text-anchor="middle" xml:space="preserve">&lt;/&gt;</text><text x="161" y="210" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Responsive Web</text><text x="161" y="228" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Design</text><text x="161" y="254" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569" text-anchor="middle">freeCodeCamp</text><rect x="118" y="296" width="86" height="20" rx="10.0" fill="#FFFFFF" fill-opacity="0.9" stroke="#10B981" stroke-width="1" opacity="0.95"/>
+<circle cx="131" cy="306.0" r="2.6" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
+</circle>
+<text x="140" y="309.5" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9" fill="#047857" letter-spacing="1.2" xml:space="preserve">VERIFIED</text><g clip-path="url(#cc1)"><rect x="-60" y="62" width="70" height="290" fill="url(#sh)" transform="skewX(-18)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;452 0" dur="7s" begin="1.5s" repeatCount="indefinite" additive="sum"/>
+</rect></g></g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.43s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" values="0.94;1" begin="0.43s" dur="0.5s" fill="freeze" additive="sum"/>
+<animateTransform attributeName="transform" type="translate" values="26.8 12.4;0 0" begin="0.43s" dur="0.5s" fill="freeze" additive="sum"/>
+<rect x="316" y="82" width="262" height="250" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="316" y="82" width="262" height="250" rx="14" fill="url(#gl)"/>
+<rect x="330" y="83" width="182" height="1" fill="#0F172A" opacity="0.12"/><circle cx="447" cy="144" r="33" fill="none" stroke="url(#mg)" stroke-width="2.6" filter="url(#fg)" opacity="0.5"/>
+<circle cx="447" cy="144" r="33" fill="none" stroke="url(#mg)" stroke-width="2.6"/>
+<circle cx="447" cy="144" r="26" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1"/>
+<path d="M434 136 L447 132 M434 136 L447 144 M434 136 L447 156 M434 152 L447 132 M434 152 L447 144 M434 152 L447 156 M447 132 L460 144 M447 144 L460 144 M447 156 L460 144" stroke="#475569" stroke-width="1" fill="none" opacity="0.85"/><circle cx="434" cy="136" r="2.6" fill="#0E7490"/><circle cx="434" cy="152" r="2.6" fill="#0E7490"/><circle cx="447" cy="132" r="2.6" fill="#0E7490"/><circle cx="447" cy="144" r="2.6" fill="#0E7490"/><circle cx="447" cy="156" r="2.6" fill="#0E7490"/><circle cx="460" cy="144" r="2.6" fill="#0E7490"/><text x="447" y="210" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">Machine Learning</text><text x="447" y="228" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">with Python</text><text x="447" y="254" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569" text-anchor="middle">freeCodeCamp</text><rect x="404" y="296" width="86" height="20" rx="10.0" fill="#FFFFFF" fill-opacity="0.9" stroke="#10B981" stroke-width="1" opacity="0.95"/>
+<circle cx="417" cy="306.0" r="2.6" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" repeatCount="indefinite"/>
+</circle>
+<text x="426" y="309.5" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9" fill="#047857" letter-spacing="1.2" xml:space="preserve">VERIFIED</text><g clip-path="url(#cc2)"><rect x="226" y="62" width="70" height="290" fill="url(#sh)" transform="skewX(-18)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;452 0" dur="7s" begin="2.3s" repeatCount="indefinite" additive="sum"/>
+</rect></g></g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.61s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" values="0.94;1" begin="0.61s" dur="0.5s" fill="freeze" additive="sum"/>
+<animateTransform attributeName="transform" type="translate" values="44.0 12.4;0 0" begin="0.61s" dur="0.5s" fill="freeze" additive="sum"/>
+<rect x="602" y="82" width="262" height="250" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="602" y="82" width="262" height="250" rx="14" fill="url(#gl)"/>
+<rect x="616" y="83" width="182" height="1" fill="#0F172A" opacity="0.12"/><circle cx="733" cy="144" r="33" fill="none" stroke="url(#mg)" stroke-width="2.6" filter="url(#fg)" opacity="0.5"/>
+<circle cx="733" cy="144" r="33" fill="none" stroke="url(#mg)" stroke-width="2.6"/>
+<circle cx="733" cy="144" r="26" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1"/>
+<g stroke="#0E7490" stroke-width="1.8" fill="none">
+<rect x="719" y="132" width="28" height="18" rx="2.5"/>
+<path d="M727 156 h12 M733 150 v6"/>
+</g><text x="733" y="210" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">MS-CIT</text><text x="733" y="254" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569" text-anchor="middle">MKCL</text><text x="733" y="271" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#0E7490" text-anchor="middle" xml:space="preserve">2016</text><rect x="690" y="296" width="86" height="20" rx="10.0" fill="#FFFFFF" fill-opacity="0.9" stroke="#10B981" stroke-width="1" opacity="0.95"/>
+<circle cx="703" cy="306.0" r="2.6" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" repeatCount="indefinite"/>
+</circle>
+<text x="712" y="309.5" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9" fill="#047857" letter-spacing="1.2" xml:space="preserve">VERIFIED</text><g clip-path="url(#cc3)"><rect x="512" y="62" width="70" height="290" fill="url(#sh)" transform="skewX(-18)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;452 0" dur="7s" begin="3.1s" repeatCount="indefinite" additive="sum"/>
+</rect></g></g><g opacity="0">
+<animate attributeName="opacity" values="0;1" begin="0.79s" dur="0.5s" fill="freeze"/>
+<animateTransform attributeName="transform" type="scale" values="0.94;1" begin="0.79s" dur="0.5s" fill="freeze" additive="sum"/>
+<animateTransform attributeName="transform" type="translate" values="61.1 12.4;0 0" begin="0.79s" dur="0.5s" fill="freeze" additive="sum"/>
+<rect x="888" y="82" width="262" height="250" rx="14" fill="#F8FAFC" fill-opacity="0.72" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="888" y="82" width="262" height="250" rx="14" fill="url(#gl)"/>
+<rect x="902" y="83" width="182" height="1" fill="#0F172A" opacity="0.12"/><circle cx="1019" cy="144" r="33" fill="none" stroke="url(#mg)" stroke-width="2.6" filter="url(#fg)" opacity="0.5"/>
+<circle cx="1019" cy="144" r="33" fill="none" stroke="url(#mg)" stroke-width="2.6"/>
+<circle cx="1019" cy="144" r="26" fill="#F1F5F9" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="1003" y="135" width="32" height="20" rx="3" stroke="#0E7490" stroke-width="1.8" fill="none"/>
+<circle cx="1010" cy="141" r="1.1" fill="#0E7490"/><circle cx="1016" cy="141" r="1.1" fill="#0E7490"/><circle cx="1022" cy="141" r="1.1" fill="#0E7490"/><circle cx="1028" cy="141" r="1.1" fill="#0E7490"/><circle cx="1010" cy="146" r="1.1" fill="#0E7490"/><circle cx="1016" cy="146" r="1.1" fill="#0E7490"/><circle cx="1022" cy="146" r="1.1" fill="#0E7490"/><circle cx="1028" cy="146" r="1.1" fill="#0E7490"/><path d="M1011 151 h16" stroke="#0E7490" stroke-width="1.4"/><text x="1019" y="210" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">CCC</text><text x="1019" y="254" font-family="'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#475569" text-anchor="middle">NIELIT</text><text x="1019" y="271" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#0E7490" text-anchor="middle" xml:space="preserve">2018</text><rect x="976" y="296" width="86" height="20" rx="10.0" fill="#FFFFFF" fill-opacity="0.9" stroke="#10B981" stroke-width="1" opacity="0.95"/>
+<circle cx="989" cy="306.0" r="2.6" fill="#10B981">
+  <animate attributeName="opacity" values="1;0.25;1" dur="2.7s" repeatCount="indefinite"/>
+</circle>
+<text x="998" y="309.5" font-family="ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace" font-size="9" fill="#047857" letter-spacing="1.2" xml:space="preserve">VERIFIED</text><g clip-path="url(#cc4)"><rect x="798" y="62" width="70" height="290" fill="url(#sh)" transform="skewX(-18)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;452 0" dur="7s" begin="3.9s" repeatCount="indefinite" additive="sum"/>
+</rect></g></g>
+</svg>

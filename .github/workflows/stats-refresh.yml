@@ -1,0 +1,41 @@
+name: Stats Refresh
+
+# Keeps the dynamic parts of the profile fresh: re-dispatches the contribution
+# snake daily so the animation on the readme never goes stale, even in weeks
+# with no pushes (the snake workflow's own cron only runs while the repo is
+# active; an explicit dispatch is the reliable path).
+
+on:
+  schedule:
+    # Daily, 04:30 UTC (10:00 IST)
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+concurrency:
+  group: stats-refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Re-dispatch contribution snake
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh workflow run snake.yml --ref main
+          echo "Dispatched snake.yml on main"
+
+      - name: Summary
+        run: |
+          {
+            echo "## Stats refresh"
+            echo ""
+            echo "- Contribution snake re-dispatched at $(date -u '+%Y-%m-%d %H:%M UTC')"
+            echo "- Third-party stat cards (stats, streak, activity graph) refresh on their own CDN cadence"
+          } >> "$GITHUB_STEP_SUMMARY"

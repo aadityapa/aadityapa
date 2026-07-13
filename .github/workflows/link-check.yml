@@ -34,11 +34,12 @@ jobs:
             --max-retries 2
             --exclude "www.linkedin.com"
             --exclude "komarev.com"
+            --exclude "github-readme-stats.shion.dev"
             --exclude "github-readme-stats.vercel.app"
             --exclude "streak-stats.demolab.com"
             --exclude "github-profile-trophy.vercel.app"
             --exclude "github-readme-activity-graph.vercel.app"
-            README.md docs/
+            README.md docs/ reports/
           fail: false
 
       - name: Open issue on broken links (scheduled runs only)
