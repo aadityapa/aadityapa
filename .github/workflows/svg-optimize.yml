@@ -1,0 +1,63 @@
+name: SVG Optimization Check
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "assets/**.svg"
+      - "favicon.svg"
+      - ".svgo.config.mjs"
+      - ".github/workflows/svg-optimize.yml"
+  pull_request:
+    paths:
+      - "assets/**.svg"
+      - "favicon.svg"
+      - ".svgo.config.mjs"
+      - ".github/workflows/svg-optimize.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  svgo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "20"
+
+      - name: Install SVGO
+        run: npm install --no-save svgo@3
+
+      - name: Dry-run SVGO with SMIL-safe config
+        run: |
+          for f in assets/*.svg favicon.svg; do
+            before=$(stat -c%s "$f")
+            npx svgo --config .svgo.config.mjs -i "$f" -o "/tmp/$(basename "$f")"
+            after=$(stat -c%s "/tmp/$(basename "$f")")
+            echo "$f: $before -> $after bytes"
+          done
+
+      - name: Verify SMIL animations survived optimization
+        run: |
+          python3 - <<'EOF'
+          import sys
+          fail = 0
+          for f in ("dark.svg", "light.svg", "favicon.svg"):
+              src = open(f"/tmp/{f}", encoding="utf-8").read()
+              for tag in ("<animate", "<animateTransform"):
+                  if tag not in src:
+                      print(f"::error::{f} lost {tag} elements during optimization")
+                      fail = 1
+              if "<animateMotion" not in src and f != "favicon.svg":
+                  print(f"::error::{f} lost animateMotion elements")
+                  fail = 1
+          sys.exit(fail)
+          EOF

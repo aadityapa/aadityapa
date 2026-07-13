@@ -1,0 +1,70 @@
+name: SVG Validation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "assets/**.svg"
+      - "favicon.svg"
+      - ".github/workflows/svg-validate.yml"
+  pull_request:
+    paths:
+      - "assets/**.svg"
+      - "favicon.svg"
+      - ".github/workflows/svg-validate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Validate SVGs (XML + GitHub compatibility)
+        run: |
+          python - <<'EOF'
+          import xml.etree.ElementTree as ET
+          import re, collections, glob, os, sys
+
+          fail = 0
+          files = sorted(glob.glob("assets/**/*.svg", recursive=True) + ["favicon.svg"])
+          for f in files:
+              src = open(f, encoding="utf-8").read()
+              try:
+                  ET.fromstring(src)
+              except ET.ParseError as e:
+                  print(f"::error file={f}::XML parse error: {e}")
+                  fail += 1
+                  continue
+              for banned in ("<script", "<style", "foreignObject", "javascript:"):
+                  if banned in src:
+                      print(f"::error file={f}::banned construct {banned!r}")
+                      fail += 1
+              ext = re.findall(r"https?://[^\"'\s>]+",
+                               src.replace("http://www.w3.org/2000/svg", ""))
+              if ext:
+                  print(f"::error file={f}::external references {ext}")
+                  fail += 1
+              ids = re.findall(r'id="([^"]+)"', src)
+              dup = [k for k, v in collections.Counter(ids).items() if v > 1]
+              if dup:
+                  print(f"::error file={f}::duplicate ids {dup}")
+                  fail += 1
+              size = os.path.getsize(f)
+              if size >= 1024 * 1024:
+                  print(f"::error file={f}::file too large ({size} bytes)")
+                  fail += 1
+              print(f"{f}: OK ({size/1024:.1f} KB, {len(set(ids))} ids)")
+          sys.exit(1 if fail else 0)
+          EOF

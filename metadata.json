@@ -1,0 +1,48 @@
+{
+  "repository": "aadityapa/aadityapa",
+  "type": "github-profile",
+  "title": "Aaditya Padiya — System Administrator | IT Infrastructure & Cloud (AWS) | DevOps | AI Infrastructure",
+  "description": "Animated GitHub profile for Aaditya Padiya: SMIL-animated dark/light hero SVGs, live GitHub stats, contribution snake, and a full design-token system.",
+  "author": {
+    "name": "Aaditya Padiya",
+    "email": "aadityapadiya@gmail.com",
+    "url": "https://aadityapadiya.vercel.app"
+  },
+  "license": "MIT",
+  "created": "2026-07-13",
+  "language": "en",
+  "keywords": [
+    "github-profile", "profile-readme", "animated-svg", "smil",
+    "system-administrator", "devops", "aws", "ai-infrastructure",
+    "networking", "pune", "india"
+  ],
+  "assets": {
+    "heroDark": "assets/dark.svg",
+    "heroLight": "assets/light.svg",
+    "favicon": "favicon.svg"
+  },
+  "workflows": [
+    ".github/workflows/snake.yml",
+    ".github/workflows/svg-validate.yml",
+    ".github/workflows/markdown-lint.yml",
+    ".github/workflows/link-check.yml",
+    ".github/workflows/svg-optimize.yml",
+    ".github/workflows/health-check.yml"
+  ],
+  "docs": [
+    "docs/animation-report.md",
+    "docs/design-system.md",
+    "docs/svg-optimization-report.md",
+    "docs/performance-report.md",
+    "docs/accessibility-report.md",
+    "docs/repository-structure.md",
+    "docs/readme-validation-report.md",
+    "docs/workflow-validation-report.md"
+  ],
+  "social": {
+    "github": "https://github.com/aadityapa",
+    "linkedin": "https://www.linkedin.com/in/aaditya-padiya-7b64372",
+    "portfolio": "https://aadityapadiya.vercel.app",
+    "email": "mailto:aadityapadiya@gmail.com"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Aaditya Padiya Profile Design Tokens",
+  "version": "1.0.0",
+  "themes": {
+    "dark": {
+      "background": "#030712",
+      "panel": "#0F172A",
+      "panelSecondary": "#111C33",
+      "textPrimary": "#F8FAFC",
+      "textSecondary": "#94A3B8",
+      "textMuted": "#64748B",
+      "border": "#1E293B",
+      "accent": {
+        "violet": "#7C3AED",
+        "cyan": "#22D3EE",
+        "emerald": "#10B981",
+        "gradient": "linear-gradient(135deg, #7C3AED 0%, #22D3EE 50%, #10B981 100%)"
+      },
+      "terminalDots": { "close": "#FF5F57", "minimize": "#FEBC2E", "maximize": "#28C840" }
+    },
+    "light": {
+      "background": "#FFFFFF",
+      "panel": "#F8FAFC",
+      "panelSecondary": "#F1F5F9",
+      "textPrimary": "#0F172A",
+      "textSecondary": "#475569",
+      "textMuted": "#64748B",
+      "border": "#E2E8F0",
+      "accent": {
+        "blue": "#2563EB",
+        "cyan": "#06B6D4",
+        "emerald": "#10B981",
+        "gradient": "linear-gradient(135deg, #2563EB 0%, #06B6D4 50%, #10B981 100%)"
+      },
+      "terminalDots": { "close": "#FF5F57", "minimize": "#FEBC2E", "maximize": "#28C840" }
+    }
+  },
+  "typography": {
+    "sans": "'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif",
+    "mono": "ui-monospace, 'Cascadia Code', Consolas, 'Courier New', monospace",
+    "scale": {
+      "hero": 25,
+      "role": 15,
+      "body": 13.5,
+      "caption": 12,
+      "ascii": 11
+    }
+  },
+  "radii": {
+    "card": 24,
+    "panel": 20,
+    "pill": 13.5,
+    "faviconTile": 14
+  },
+  "spacing": {
+    "cardPadding": 28,
+    "panelPadding": 30,
+    "panelGap": 24,
+    "infoRowStep": 27,
+    "pillGap": 10
+  },
+  "canvas": {
+    "hero": { "width": 1180, "height": 610 },
+    "favicon": { "width": 64, "height": 64 }
+  },
+  "effects": {
+    "auroraBlur": 46,
+    "glowBlur": 3.2,
+    "softShadowBlur": 9,
+    "noiseBaseFrequency": 0.85,
+    "borderShimmerDuration": "14s",
+    "gradientSweepDuration": "9s",
+    "scanlineDuration": "11s"
+  }
+}

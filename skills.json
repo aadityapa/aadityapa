@@ -1,0 +1,53 @@
+{
+  "operatingSystems": [
+    "Windows 10/11",
+    "Windows Server 2016/2019/2022",
+    "Ubuntu",
+    "Linux (Debian/RHEL)"
+  ],
+  "cloudPlatforms": [
+    "AWS EC2", "AWS S3", "AWS IAM", "AWS VPC", "AWS Route53", "AWS CloudWatch",
+    "Vercel", "Render"
+  ],
+  "networking": [
+    "DNS", "DHCP", "IP Addressing & Subnetting", "VLAN", "VPN",
+    "Firewall (SonicWALL)", "LAN/WAN", "LACP", "Network Security",
+    "Routing & Switching"
+  ],
+  "aiMachineLearning": [
+    "AI Model Development", "LLM Integration (Ollama, OpenAI API)",
+    "AI Model Fine-Tuning", "Python (ML/AI)", "AIOps"
+  ],
+  "storageHardware": [
+    "NAS Configuration & Management", "System Building",
+    "Server Building & Assembly", "HP Gen10 Server"
+  ],
+  "virtualizationContainers": [
+    "Docker", "VMware", "Hyper-V", "VDI Server", "Virtual Machines"
+  ],
+  "devopsAutomation": [
+    "CI/CD", "GitHub Actions", "Shell Scripting", "PowerShell"
+  ],
+  "securityCompliance": [
+    "Active Directory", "Microsoft Intune", "MDM", "Endpoint Security",
+    "ACL", "Patch Management", "System Hardening", "Disaster Recovery",
+    "Business Continuity"
+  ],
+  "monitoringITSM": [
+    "Infrastructure Monitoring", "Incident Management", "Root Cause Analysis",
+    "Site Reliability Engineering", "Technical Documentation"
+  ],
+  "development": [
+    "Next.js", "React", "Python", "FastAPI", "Streamlit", "Solidity",
+    "HTML/CSS/JavaScript", "SEO Optimization"
+  ],
+  "tools": [
+    "MS Office 365", "Git", "GitHub", "CCTV Monitoring",
+    "Logical Volume Management (LVM)"
+  ],
+  "featuredInHeroSVG": [
+    "AWS", "Linux", "Windows Server", "Docker", "Networking",
+    "Active Directory", "CI/CD", "Python", "Ollama / LLMs",
+    "Intune", "FastAPI", "Next.js"
+  ]
+}

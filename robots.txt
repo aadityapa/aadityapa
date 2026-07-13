@@ -1,0 +1,8 @@
+# robots.txt — Aaditya Padiya · GitHub Profile Repository
+# This repository is a public GitHub profile. All content is intended
+# to be crawlable and indexable.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://raw.githubusercontent.com/aadityapa/aadityapa/main/sitemap.xml

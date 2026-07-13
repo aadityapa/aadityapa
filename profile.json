@@ -1,0 +1,143 @@
+{
+  "$schema_note": "Structured profile extracted from Aaditya_Padiya_CV.pdf",
+  "fullName": "Aaditya Padiya",
+  "currentPosition": "System Administrator",
+  "professionalTitle": "System Administrator | IT Infrastructure & Cloud (AWS) | Networking | DevOps | AI Infrastructure",
+  "yearsOfExperience": "3+",
+  "summary": "System Administrator with 3+ years of experience managing enterprise IT infrastructure, Windows Server, Active Directory, Microsoft Intune, and production systems. Skilled in AWS (EC2, S3, IAM, VPC, CloudWatch), Linux/Ubuntu administration, shell scripting, networking (DNS/DHCP/VLAN/Firewall/VPN), NAS configuration, endpoint security, and backup & disaster recovery. Experienced in AI/LLM model deployment, AI infrastructure setup, system & server building, and DevOps tooling (Docker, CI/CD, GitHub Actions). Proven track record of optimizing uptime, reducing incidents, and delivering scalable IT solutions.",
+  "location": "Pune, Maharashtra, India",
+  "contact": {
+    "email": "aadityapadiya@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/aaditya-padiya-7b64372",
+    "portfolio": "https://aadityapadiya.vercel.app",
+    "github": "https://github.com/aadityapa",
+    "githubUsername": "aadityapa"
+  },
+  "currentCompany": {
+    "name": "CludoBits IT Solutions Pvt. Ltd.",
+    "location": "Pune, India",
+    "role": "System Administrator",
+    "since": "2025-11"
+  },
+  "experience": [
+    {
+      "role": "System Administrator",
+      "company": "CludoBits IT Solutions Pvt. Ltd.",
+      "location": "Pune",
+      "period": "Nov 2025 - Present",
+      "highlights": [
+        "Managed 50+ endpoints, servers, and enterprise network infrastructure maintaining 99.9% uptime",
+        "Monitored Linux (Ubuntu) and Windows Server environments; patch management and system hardening",
+        "Reduced average incident resolution time by 30% through structured root cause analysis",
+        "Implemented CI/CD pipelines and GitHub Actions workflows for production systems",
+        "Configured and managed NAS solutions for centralized, secure organizational data storage",
+        "Built custom workstation systems and servers for project-specific hardware requirements",
+        "Deployed and maintained AI models and LLM integrations (Ollama, OpenAI API) for internal apps",
+        "Performed AI model fine-tuning and optimization for production deployments",
+        "Managed Docker containers for application isolation and deployment consistency",
+        "Administered user access, IAM policies, and endpoint security across all systems"
+      ]
+    },
+    {
+      "role": "Information Technology Engineer (L2/L3)",
+      "company": "Godrej Properties Limited",
+      "location": "Pune",
+      "period": "Jan 2025 - Oct 2025",
+      "highlights": [
+        "Provided L2/L3 IT support across enterprise infrastructure for 350+ users with SLA compliance",
+        "Designed and deployed corporate network: SonicWALL TZ540 firewall with dual ISP failover, D-Link L3 switches with 9 VLANs, HP Gen10 DMZ server for 350 systems",
+        "Monitored Windows Server, Active Directory, DNS/DHCP, and user account management",
+        "Configured and enforced MDM policies with Microsoft Intune; administered VPN and firewall rules",
+        "Managed IT assets, software licensing, and security compliance"
+      ]
+    },
+    {
+      "role": "IT Manager / Desktop Support Engineer (L2)",
+      "company": "Mediprobe Consultancy Services Pvt. Ltd.",
+      "location": "Pune",
+      "period": "Jan 2024 - Jan 2025",
+      "highlights": [
+        "Managed IT infrastructure ensuring 99%+ uptime and regulatory compliance",
+        "Configured Windows OS, Windows Server, DNS/DHCP, Active Directory, ACL, backup & DR",
+        "Reduced incident resolution times by 40% via streamlined processes and monitoring tools",
+        "Led cross-functional IT teams; workstation setups, OS deployments, system upgrades",
+        "Implemented endpoint security policies, VPN access controls, and network security practices"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Nexovo Self-Healing Cloud Platform",
+      "description": "AI-native reliability automation: full-stack AIOps platform with real-time incident detection, AI-assisted RCA, escalation workflows, audit timelines, and Slack/Jira/HTTPS webhook integrations; demonstrated measurable MTTR reduction.",
+      "stack": ["Python", "Streamlit", "FastAPI", "Render", "DevOps", "SRE", "CloudWatch"],
+      "github": "https://github.com/aadityapa/Self-Healing-Cloud-Platform",
+      "association": "Nexovo Tech Services Private Limited"
+    },
+    {
+      "name": "TrustOCR AI",
+      "description": "Blockchain-verified document intelligence: browser-side OCR, PDF/Word parsing, AI structuring (Ollama/OpenAI), EVM blockchain registry for SHA-256 document fingerprint verification, 3D pipeline visualization.",
+      "stack": ["Next.js", "React", "Solidity", "Hardhat", "Ollama", "OpenAI API", "Vercel"],
+      "github": "https://github.com/aadityapa/ocr",
+      "live": "https://ocr-chi-ivory.vercel.app",
+      "period": "Mar 2026 - Apr 2026",
+      "association": "Nexovo Tech Services Private Limited"
+    },
+    {
+      "name": "Corporate Network Infrastructure",
+      "description": "Enterprise-grade network for 350 users: SonicWALL TZ540 firewall with dual ISP failover, D-Link L3 switches with 9 VLANs and LACP uplinks, HP Gen10 DMZ server.",
+      "stack": ["SonicWALL", "D-Link L3", "HP Gen10 Server", "VLAN", "Firewall", "Network Topology"],
+      "github": "https://github.com/aadityapa/corporate-network-infrastructure",
+      "period": "Sep 2025 - Oct 2025",
+      "association": "Godrej Properties Limited"
+    },
+    {
+      "name": "Ritika Infotech",
+      "description": "SEO-optimized business website and IT service platform ranking on Google; domain, hosting, and live production environment management.",
+      "stack": ["HTML", "CSS", "JavaScript", "SEO", "Domain Management", "Web Hosting"],
+      "live": "https://ritikainfotech.in",
+      "association": "Nexovo Tech Services Private Limited"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Computer Applications (BCA) - Information Technology",
+      "institution": "Shri Shivaji Science College, Amravati, India",
+      "period": "Sep 2020 - Jun 2023"
+    },
+    {
+      "degree": "H.S.C. - Computer Science",
+      "institution": "S.R. Patil Jr. College of Science, Akola, India",
+      "period": "2018 - 2020"
+    },
+    {
+      "degree": "S.S.C. - Science",
+      "institution": "Swami Vivekanand Dhyanpheth, Telhara",
+      "period": "2017 - 2018"
+    }
+  ],
+  "certifications": [
+    "Responsive Web Design",
+    "Machine Learning with Python",
+    "MS-CIT (2016)",
+    "CCC (2018)"
+  ],
+  "languages": [
+    { "language": "English", "level": "Upper Intermediate (B2)" },
+    { "language": "Hindi", "level": "Bilingual / Proficient (C2)" },
+    { "language": "Marathi", "level": "Bilingual / Proficient (C2)" }
+  ],
+  "achievements": [
+    "Maintained 99.9% uptime across all production systems at CludoBits",
+    "Designed enterprise network for 350 users (dual-ISP failover, 9 VLANs)",
+    "Reduced incident resolution time by 30% (CludoBits) and 40% (Mediprobe)",
+    "Deployed fine-tuned LLM integrations to production for internal business applications",
+    "Shipped SEO-optimized website ranking on Google"
+  ],
+  "keywords": [
+    "System Administrator", "IT Infrastructure", "AWS", "Cloud", "Networking",
+    "DevOps", "AI Infrastructure", "Windows Server", "Active Directory",
+    "Microsoft Intune", "Linux", "Ubuntu", "Docker", "CI/CD", "GitHub Actions",
+    "NAS", "Endpoint Security", "Disaster Recovery", "Ollama", "OpenAI API",
+    "AIOps", "SRE", "VLAN", "Firewall", "SonicWALL", "Pune"
+  ]
+}

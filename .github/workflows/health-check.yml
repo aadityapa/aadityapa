@@ -1,0 +1,62 @@
+name: Repository Health
+
+on:
+  schedule:
+    # Weekly, Sunday 05:00 UTC
+    - cron: "0 5 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Verify required files and README references
+        run: |
+          python - <<'EOF'
+          import json, os, re, sys
+
+          fail = 0
+          required = [
+              "README.md", "LICENSE", ".gitignore", "robots.txt", "sitemap.xml",
+              "favicon.svg", "profile.json", "skills.json", "theme.json",
+              "metadata.json", "assets/dark.svg", "assets/light.svg",
+              "docs/animation-report.md", "docs/design-system.md",
+              "docs/svg-optimization-report.md", "docs/performance-report.md",
+              "docs/accessibility-report.md", "docs/repository-structure.md",
+          ]
+          for f in required:
+              if not os.path.exists(f):
+                  print(f"::error::missing required file: {f}")
+                  fail += 1
+
+          src = open("README.md", encoding="utf-8").read()
+          refs = set(re.findall(r'(?:src|href)="(\./[^"]+)"', src))
+          refs |= set(re.findall(r"\]\((\./[^)]+)\)", src))
+          for r in sorted(refs):
+              p = r.removeprefix("./")
+              if not os.path.exists(p):
+                  print(f"::error::README references missing path: {r}")
+                  fail += 1
+
+          for f in ("profile.json", "skills.json", "theme.json", "metadata.json"):
+              try:
+                  json.load(open(f, encoding="utf-8"))
+              except Exception as e:
+                  print(f"::error::{f} invalid JSON: {e}")
+                  fail += 1
+
+          print("Health check:", "FAILED" if fail else "OK")
+          sys.exit(1 if fail else 0)
+          EOF

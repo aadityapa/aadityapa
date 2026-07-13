@@ -1,0 +1,50 @@
+name: Link Check
+
+on:
+  schedule:
+    # Weekly, Monday 06:00 UTC
+    - cron: "0 6 * * 1"
+  push:
+    branches:
+      - main
+    paths:
+      - "**.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Scan links with lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --accept 200,204,206,301,302,308,429
+            --timeout 20
+            --max-retries 2
+            --exclude "www.linkedin.com"
+            --exclude "komarev.com"
+            --exclude "github-readme-stats.vercel.app"
+            --exclude "streak-stats.demolab.com"
+            --exclude "github-profile-trophy.vercel.app"
+            --exclude "github-readme-activity-graph.vercel.app"
+            README.md docs/
+          fail: false
+
+      - name: Open issue on broken links (scheduled runs only)
+        if: github.event_name == 'schedule' && steps.lychee.outputs.exit_code != '0'
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: "Link check: broken links found"
+          content-filepath: ./lychee/out.md
+          labels: report, automated
