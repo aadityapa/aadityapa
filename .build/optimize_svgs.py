@@ -109,7 +109,7 @@ def optimize(path):
 
     out = ET.tostring(root, encoding="unicode")
     n_anim = len(re.findall(r"<animate(?:Transform|Motion)?[\s>]", out))
-    assert n_anim == 179, f"animation count {n_anim} != 179 (v12 hero inventory)"
+    assert n_anim == 183, f"animation count {n_anim} != 183 (v12 hero + 29-row portrait)"
     open(path, "w", encoding="utf-8", newline="\n").write(out)
     print(path, "->", len(out.encode("utf-8")), "bytes, animations:", n_anim)
 

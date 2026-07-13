@@ -9,7 +9,7 @@ The intro plays as a choreographed sequence over ~7.6 s, then hands off to infin
 | Time (s) | Event |
 |----------|-------|
 | 0.0 | Aurora, neural constellation, particles, scanline, border shimmer, noise all running (infinite) |
-| 0.35 – 3.3 | ASCII portrait reveals line by line (25 rows × 0.11 s stagger) |
+| 0.35 – 3.5 | ASCII portrait reveals line by line (29 rows × 0.11 s stagger) |
 | 0.9 – 2.8 | "Hi, I'm Aaditya Padiya" types out (22 discrete steps) |
 | 2.8 | Wave emoji pops in and rocks ±14° for 3 cycles |
 | 3.0 – 5.2 | 8 profile info rows slide in (0.32 s stagger) |
@@ -47,7 +47,11 @@ The intro plays as a choreographed sequence over ~7.6 s, then hands off to infin
 | Favicon gradient | `#fag` | `animateTransform` rotate | 8 s | |
 | Favicon dot | 2.4 px circle | `animate` opacity | 2.4 s | |
 
-**Totals per hero SVG: 179 animation elements** — 153 `animate`, 18 `animateTransform`, 8 `animateMotion` (counted from the shipped files). The favicon adds 2 more (rotating gradient + pulsing dot).
+**Totals per hero SVG: 183 animation elements** — 157 `animate`, 18 `animateTransform`, 8 `animateMotion` (counted from the shipped files). The favicon adds 2 more (rotating gradient + pulsing dot).
+
+### v12.1 ASCII portrait source (2026-07-13)
+
+The hero avatar grid is regenerated from `assets/source-portrait.png` (user-attached professional three-quarter portrait) via `.build/photo_to_ascii.py` → `ascii_face.py`. Pipeline: flood-fill subject mask on warm-gray studio background, histogram equalization, gamma 0.85, contrast 1.22, edge-blended unsharp, 70-char density ramp, 56×29 monospace grid (cell aspect 0.486). Pose asymmetry (quiff sweep, beard contour, three-quarter angle) is preserved — not mirrored. Glasses read as a lighter horizontal band at grid scale but remain subtle.
 
 ## v12 Visualization Inventory
 
@@ -61,7 +65,7 @@ Counted from the shipped files (dark/light pairs are identical):
 | `certifications-*.svg` | 24 | Rotating medallion gradient rings, staggered scale-pop reveals, shimmer sweeps every ~7 s, VERIFIED pill pulses |
 | `projects-*.svg` | 73 | Staggered card fade+rise reveals, status-dot pulses, breathing border glows, chip shimmer |
 
-Grand total across the 13 shipped SVGs: **922 animation elements** (2×179 hero + 2×68 ecosystem + 2×76 architecture + 2×40 timeline + 2×24 certifications + 2×73 projects + 2 favicon).
+Grand total across the 13 shipped SVGs: **930 animation elements** (2×183 hero + 2×68 ecosystem + 2×76 architecture + 2×40 timeline + 2×24 certifications + 2×73 projects + 2 favicon).
 
 ## Technique Notes
 
