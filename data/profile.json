@@ -1,5 +1,5 @@
 {
-  "$schema_note": "Canonical structured profile for the aadityapa GitHub profile repository (v12). Sources: Aaditya_Padiya_CV.pdf (primary), Profile.pdf (LinkedIn export), CV old.pdf, live GitHub API (api.github.com/users/aadityapa). The root-level profile.json is a synchronized copy of the identity/experience/projects subset kept for backwards compatibility; this file is the source of truth.",
+  "$schema_note": "Canonical structured profile for the aadityapa GitHub profile repository (v12). Sources: Aaditya_Padiya_CV.pdf (primary, LastWriteTime 2026-06-09), Profile (1).pdf LinkedIn export (2026-06-09), CV old.pdf, live GitHub API (api.github.com/users/aadityapa, refreshed 2026-07-23). Root profile.json is a synchronized identity/experience/projects subset; this file is the source of truth. Refresh 2026-07-23: added AUTO-CAN-Solutions and Maher-Hospital- from GitHub activity; employment text unchanged (primary CV = CludoBits). LinkedIn export lists the same Nov 2025–Present SysAdmin role under 'Karnex Software Solutions Pvt Ltd' — not applied without confirmation. Credence LOI (Assistant IT Head, join by 2026-08-03) is a future offer and not listed as current employment.",
   "identity": {
     "fullName": "Aaditya Padiya",
     "githubUsername": "aadityapa",
@@ -180,6 +180,28 @@
       "repoVerified": true
     },
     {
+      "name": "AUTO-CAN Solutions",
+      "description": "Marketing website for an automotive engineering & embedded software company (Jaipur/Pune): modern animated React site, statically prerendered, SEO and AI-answer-engine optimized.",
+      "stack": ["React", "JavaScript", "Vercel", "SEO"],
+      "category": "Web / Marketing",
+      "status": "Live",
+      "repo": "https://github.com/aadityapa/AUTO-CAN-Solutions",
+      "repoVerified": true,
+      "demo": "https://auto-can-solutions.vercel.app",
+      "addedAt": "2026-07-23"
+    },
+    {
+      "name": "Maher Hospital & Nursing Home",
+      "description": "Premium React website for Maher Hospital & Nursing Home.",
+      "stack": ["React", "JavaScript", "Vercel"],
+      "category": "Web / Healthcare",
+      "status": "Live",
+      "repo": "https://github.com/aadityapa/Maher-Hospital-",
+      "repoVerified": true,
+      "demo": "https://maher-hospital.vercel.app",
+      "addedAt": "2026-07-23"
+    },
+    {
       "name": "EduAI",
       "description": "Multi-tenant SaaS platform for AI-powered education (Classes 1-10, CBSE/ICSE/State Boards) built as a Turborepo monorepo.",
       "stack": ["TypeScript", "Turborepo", "Next.js", "AI"],
@@ -204,6 +226,15 @@
       "category": "Enterprise SaaS",
       "status": "In development",
       "repo": "https://github.com/aadityapa/Nexovo-Cafe-System",
+      "repoVerified": true
+    },
+    {
+      "name": "Nexovo HMS",
+      "description": "Production-oriented monorepo baseline for a Hospital Management System.",
+      "stack": ["TypeScript"],
+      "category": "Healthcare",
+      "status": "In development",
+      "repo": "https://github.com/aadityapa/nexovo-HMS",
       "repoVerified": true
     },
     {
@@ -240,14 +271,15 @@
     }
   ],
   "githubReposVerified": {
-    "checkedAt": "2026-07-13",
-    "publicRepoCount": 17,
+    "checkedAt": "2026-07-23",
+    "publicRepoCount": 19,
     "repos": [
       "aadityapa", "AI-Interview-Model-Backend-v2", "AI-Interview-Model-Frontend-v2",
-      "corporate-network-infrastructure", "dr", "EduAI", "EventManagment",
-      "HealthEcosystem-Enterprise-Healthcare-Platform", "home-website", "madhubanfrontend",
-      "Nexovo-Cafe-System", "nexovo-HMS", "ocr", "Portfolio",
-      "Real-Estate-ERP-Platform", "Self-Healing-Cloud-Platform", "survey-form"
+      "AUTO-CAN-Solutions", "corporate-network-infrastructure", "dr", "EduAI",
+      "EventManagment", "HealthEcosystem-Enterprise-Healthcare-Platform",
+      "home-website", "madhubanfrontend", "Maher-Hospital-", "Nexovo-Cafe-System",
+      "nexovo-HMS", "ocr", "Portfolio", "Real-Estate-ERP-Platform",
+      "Self-Healing-Cloud-Platform", "survey-form"
     ]
   },
   "achievements": [

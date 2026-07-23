@@ -1,5 +1,26 @@
 # Production Readiness Report
 
+## Refresh Addendum (2026-07-23)
+
+Re-sourced against newest local CVs/LOIs + live GitHub API + portfolio.
+
+### What was new
+
+- Primary CV (`Aaditya_Padiya_CV.pdf`, 2026-06-09) and LinkedIn export (`Profile (1).pdf`) match the v12 employment/skills already shipped — **no title/company change applied** from resume text.
+- GitHub public repos **17 → 19**. New featured work: **AUTO-CAN-Solutions** ([live](https://auto-can-solutions.vercel.app)) and **Maher-Hospital-** ([live](https://maher-hospital.vercel.app)). `Real-Estate-ERP-Platform` and several Nexovo monorepos also saw recent pushes.
+- Embeds re-checked: `github-readme-stats.shion.dev`, portfolio, TrustOCR, Ritika, AI Interview, snake `output` branch, AUTO-CAN + Maher demos → **200**.
+
+### What was intentionally not applied
+
+- LinkedIn export names the Nov 2025–Present SysAdmin employer as **Karnex Software Solutions Pvt Ltd**; primary CV says **CludoBits IT Solutions Pvt. Ltd.** Kept CludoBits pending confirmation.
+- Credence Resource Management LOIs (Junior SysAdmin Oct 2025; Assistant IT Head join by **2026-08-03**) are offers, not current roles — not added to experience/timeline.
+
+### Files touched this refresh
+
+`data/profile.json`, `profile.json`, `README.md` projects table, `.build/generate_projects.py` + regenerated `assets/projects-*.svg`, `metadata.json`, this report.
+
+---
+
 ## v12 Upgrade Addendum (2026-07-13, supersedes inventory numbers below)
 
 The repository was upgraded from the audited v11 state to **ULTIMATE v12**. The v11 audit below remains the baseline record; everything it fixed stays fixed. What changed in v12:

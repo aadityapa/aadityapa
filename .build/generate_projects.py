@@ -54,6 +54,7 @@ MONO = "ui-monospace,'Cascadia Code',Consolas,'Courier New',monospace"
 SANS = "'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif"
 
 # name lines (max 2), category, status, 3 desc lines (<=34 chars), chips
+# Featured set refreshed 2026-07-23 from live GitHub activity (AUTO-CAN + Maher).
 PROJECTS = [
     (["Nexovo Self-Healing", "Cloud"], "AIOPS/SRE", "PRODUCTION",
      ["AI-native AIOps platform with", "real-time incident detection,", "AI RCA and escalation workflows."],
@@ -67,18 +68,18 @@ PROJECTS = [
     (["HealthEcosystem"], "HEALTHCARE SAAS", "IN DEV",
      ["Multi-tenant healthcare SaaS:", "LIMS, EHR, PMS, billing, PACS/RIS,", "ABDM compliance and AI."],
      ["TypeScript", "NestJS", "Next.js", "EKS"]),
-    (["EduAI"], "AI/EDTECH", "IN DEV",
-     ["Multi-tenant SaaS for AI-powered", "education, Classes 1-10 across", "CBSE/ICSE/State boards."],
-     ["TypeScript", "Turborepo", "Next.js", "AI"]),
+    (["AUTO-CAN Solutions"], "WEB/MARKETING", "LIVE",
+     ["Animated marketing site for an", "automotive engineering company;", "SEO and AI-answer optimized."],
+     ["React", "JavaScript", "Vercel", "SEO"]),
     (["Real Estate ERP"], "ENTERPRISE SAAS", "IN DEV",
      ["Enterprise-grade multi-tenant", "SaaS platform for Indian real", "estate developers."],
      ["TypeScript", "Next.js", "Postgres"]),
+    (["Maher Hospital"], "WEB/HEALTHCARE", "LIVE",
+     ["Premium React website for Maher", "Hospital & Nursing Home with a", "polished patient-facing UX."],
+     ["React", "JavaScript", "Vercel"]),
     (["AI Interview Model"], "AI", "LIVE",
      ["AI-powered interview platform", "with Python model backend and", "TypeScript frontend."],
      ["Python", "TypeScript", "AI", "Vercel"]),
-    (["Ritika Infotech"], "WEB/SEO", "LIVE",
-     ["SEO-optimized business website", "ranking on Google; domain,", "hosting and production ops."],
-     ["HTML", "CSS", "JS", "SEO"]),
 ]
 
 GREEN_STATUSES = ("LIVE", "PRODUCTION", "DEPLOYED")
@@ -221,9 +222,10 @@ def build(theme_key):
     title = "Aaditya Padiya — Featured Projects"
     desc = (f"Animated {t['desc']}-theme showcase of eight featured projects by Aaditya Padiya: "
             "Nexovo Self-Healing Cloud (AIOps), TrustOCR AI (blockchain document AI), Corporate "
-            "Network Infrastructure, HealthEcosystem (healthcare SaaS), EduAI (AI edtech), "
-            "Real Estate ERP, AI Interview Model and Ritika Infotech, each shown as a glass "
-            "card with category, description, tech chips and live status.")
+            "Network Infrastructure, HealthEcosystem (healthcare SaaS), AUTO-CAN Solutions "
+            "(automotive marketing site), Real Estate ERP, Maher Hospital website, and AI "
+            "Interview Model, each shown as a glass card with category, description, tech "
+            "chips and live status.")
     cards = []
     for i, (name_lines, category, status, desc_lines, chips) in enumerate(PROJECTS):
         col, row = i % COLS, i // COLS

@@ -106,6 +106,20 @@
       "stack": ["HTML", "CSS", "JavaScript", "SEO", "Domain Management", "Web Hosting"],
       "live": "https://ritikainfotech.in",
       "association": "Nexovo Tech Services Private Limited"
+    },
+    {
+      "name": "AUTO-CAN Solutions",
+      "description": "Marketing website for an automotive engineering & embedded software company: animated React site, statically prerendered, SEO and AI-answer optimized.",
+      "stack": ["React", "JavaScript", "Vercel", "SEO"],
+      "github": "https://github.com/aadityapa/AUTO-CAN-Solutions",
+      "live": "https://auto-can-solutions.vercel.app"
+    },
+    {
+      "name": "Maher Hospital & Nursing Home",
+      "description": "Premium React website for Maher Hospital & Nursing Home.",
+      "stack": ["React", "JavaScript", "Vercel"],
+      "github": "https://github.com/aadityapa/Maher-Hospital-",
+      "live": "https://maher-hospital.vercel.app"
     }
   ],
   "education": [

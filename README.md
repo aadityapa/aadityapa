@@ -107,9 +107,11 @@ I'm **Aaditya Padiya**, a **System Administrator** at **CludoBits IT Solutions P
 | **TrustOCR AI** | Blockchain-verified document intelligence: browser OCR, AI structuring, on-chain SHA-256 registry | Next.js · Solidity · Hardhat · Ollama | [repo](https://github.com/aadityapa/ocr) · [live](https://ocr-chi-ivory.vercel.app) |
 | **Corporate Network Infrastructure** | Enterprise network for 350 users: SonicWALL TZ540 dual-ISP failover, 9 VLANs, HP Gen10 DMZ | SonicWALL · L3 · VLAN · Firewall | [repo](https://github.com/aadityapa/corporate-network-infrastructure) |
 | **HealthEcosystem** | Multi-tenant healthcare SaaS: LIMS, EHR, PMS, billing, PACS/RIS, ABDM, AI | TypeScript · NestJS · Next.js · EKS | [repo](https://github.com/aadityapa/HealthEcosystem-Enterprise-Healthcare-Platform) |
-| **EduAI** | Multi-tenant SaaS for AI-powered education (Classes 1–10, CBSE/ICSE/State) | TypeScript · Turborepo · AI | [repo](https://github.com/aadityapa/EduAI) |
+| **AUTO-CAN Solutions** | Animated marketing site for an automotive engineering company (SEO + AI-answer optimized) | React · JavaScript · Vercel | [repo](https://github.com/aadityapa/AUTO-CAN-Solutions) · [live](https://auto-can-solutions.vercel.app) |
 | **Real Estate ERP Platform** | Enterprise multi-tenant SaaS for Indian real estate developers | TypeScript · Next.js | [repo](https://github.com/aadityapa/Real-Estate-ERP-Platform) |
+| **Maher Hospital** | Premium React website for Maher Hospital & Nursing Home | React · JavaScript · Vercel | [repo](https://github.com/aadityapa/Maher-Hospital-) · [live](https://maher-hospital.vercel.app) |
 | **AI Interview Model** | AI-powered interview platform (Python backend, TypeScript frontend) | Python · TypeScript | [repo](https://github.com/aadityapa/AI-Interview-Model-Backend-v2) · [live](https://ai-interview-model-frontend-v2.vercel.app) |
+| **EduAI** | Multi-tenant SaaS for AI-powered education (Classes 1–10, CBSE/ICSE/State) | TypeScript · Turborepo · AI | [repo](https://github.com/aadityapa/EduAI) |
 | **Ritika Infotech** | SEO-optimized business website ranking on Google; domain, hosting & production ops | HTML · CSS · JS · SEO | [live](https://ritikainfotech.in) |
 
 ## 🌐 Technology Ecosystem
@@ -133,7 +135,7 @@ I'm **Aaditya Padiya**, a **System Administrator** at **CludoBits IT Solutions P
 <!-- The canonical github-readme-stats.vercel.app shared instance returned 503
      (public deployment paused — Vercel OSS sponsorship ended, see
      anuraghazra/github-readme-stats#3851). Switched to the community
-     HA mirror github-readme-stats.shion.dev, verified live 2026-07-13. -->
+     HA mirror github-readme-stats.shion.dev, re-verified live 2026-07-23. -->
 
 <div align="center">
 
